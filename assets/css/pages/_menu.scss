@@ -260,3 +260,10 @@
     }
   }
 }
+
+body:not(.dark) {
+  .menu-section .order-summery-section .checkout-detail {
+    --dark-text: 61, 61, 61;
+    --content-color: 116, 116, 116;
+  }
+}
