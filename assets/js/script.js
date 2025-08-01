@@ -256,9 +256,12 @@ function setDark() {
 /*====================
   09. Menu sidebar 
 ======================*/
-document
-  .getElementById("offcanvas-close")
-  .addEventListener("click", function () {
+const offcanvasCloseBtn = document.getElementById("offcanvas-close");
+if (offcanvasCloseBtn) {
+  offcanvasCloseBtn.addEventListener("click", function () {
     var offcanvasSide = document.getElementById("offcanvasNavbar");
-    offcanvasSide.classList.remove("show");
+    if (offcanvasSide) {
+      offcanvasSide.classList.remove("show");
+    }
   });
+}

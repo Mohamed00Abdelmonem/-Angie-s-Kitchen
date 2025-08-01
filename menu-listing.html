@@ -1089,6 +1089,21 @@ fetch('navbar.html')
   .then(res => res.text())
   .then(data => {
     document.getElementById('navbar-placeholder').innerHTML = data;
+    // Re-initialize Bootstrap dropdowns for dynamically loaded navbar
+    var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
+    dropdownElementList.map(function (dropdownToggleEl) {
+      return new bootstrap.Dropdown(dropdownToggleEl);
+    });
+    // Workaround for dropdowns in offcanvas on mobile
+    document.querySelectorAll('.offcanvas .dropdown-toggle').forEach(function (dropdown) {
+      dropdown.addEventListener('click', function (e) {
+        e.stopPropagation();
+        let menu = this.nextElementSibling;
+        if (menu && menu.classList.contains('dropdown-menu')) {
+          menu.classList.toggle('show');
+        }
+      });
+    });
   });
 </script>
 <!-- Mobile Reservations Button -->
