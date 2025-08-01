@@ -4170,6 +4170,433 @@ li {
   border: 1px solid rgba(var(--theme-color), 1);
 }
 
+
+
+
+
+
+
+ /* Filter Buttons */
+    .btn-filter {
+      border: 2px solid #ff8d2f;
+      color: #ff8d2f;
+      background: white;
+      border-radius: 50px;
+      padding: 8px 20px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn-filter:hover,
+    .btn-filter.active {
+      background: #ff8d2f;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(255, 141, 47, 0.2);
+    }
+
+    /* Dish Card */
+    .dish-card {
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .dish-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .dish-image {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .dish-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: #ffc107;
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 600;
+      z-index: 1;
+    }
+
+    .dish-title {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0;
+    }
+
+    .dish-price {
+      color: #ff8d2f;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .dish-description {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .dish-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 50px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .tag.vegetarian {
+      background: rgba(40, 167, 69, 0.1);
+      color: #28a745;
+    }
+
+    .tag.egyptian {
+      background: rgba(23, 162, 184, 0.1);
+      color: #17a2b8;
+    }
+
+    .dish-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .btn-view {
+      background: #17a2b8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 15px;
+      flex: 1;
+      transition: all 0.3s;
+    }
+
+    .btn-view:hover {
+      background: #138496;
+      transform: translateY(-2px);
+    }
+
+    .btn-order {
+      background: #ff8d2f;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 15px;
+      flex: 1;
+      transition: all 0.3s;
+    }
+
+    .btn-order:hover {
+      background: #e67300;
+      transform: translateY(-2px);
+    }
+
+    .dish-note {
+      color: #999;
+      font-size: 12px;
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    /* Dish Card Styles */
+    .dish-card {
+      border: none;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      background: white;
+    }
+
+    .dish-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .dish-image {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .dish-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      padding: 5px 12px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 600;
+      color: white;
+      z-index: 1;
+    }
+
+    .dish-title {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0;
+      font-size: 1.1rem;
+    }
+
+    .dish-price {
+      color: #ff8d2f;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .dish-description {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .dish-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 50px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .tag.vegetarian {
+      background: rgba(40, 167, 69, 0.1);
+      color: #28a745;
+    }
+
+    .tag.egyptian {
+      background: rgba(23, 162, 184, 0.1);
+      color: #17a2b8;
+    }
+
+    .tag.arabic {
+      background: rgba(255, 193, 7, 0.1);
+      color: #ffc107;
+    }
+
+    .dish-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .btn-view {
+      background: #17a2b8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 15px;
+      flex: 1;
+      transition: all 0.3s;
+      font-size: 14px;
+    }
+
+    .btn-view:hover {
+      background: #138496;
+      transform: translateY(-2px);
+    }
+
+    .btn-order {
+      background: #ff8d2f;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 15px;
+      flex: 1;
+      transition: all 0.3s;
+      font-size: 14px;
+    }
+
+    .btn-order:hover {
+      background: #e67300;
+      transform: translateY(-2px);
+    }
+
+    .dish-note {
+      color: #999;
+      font-size: 12px;
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .menu-grid-section .card {
+      border-radius: 16px;
+      border: none;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s;
+      background: #fff7f0;
+    }
+
+    .menu-grid-section .card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 8px 32px rgba(255, 140, 0, 0.13);
+    }
+
+    .menu-grid-section .card-img-top {
+      border-radius: 16px 16px 0 0;
+      height: 180px;
+      object-fit: cover;
+      background: #ffe3c1;
+    }
+
+    .menu-grid-section .badge {
+      font-size: 0.85em;
+      margin-right: 0.3em;
+    }
+
+    .menu-grid-section .btn-menu {
+      background: #ff8d2f;
+      color: #fff;
+      border: none;
+      border-radius: 24px;
+      padding: 0.5em 1.5em;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .menu-grid-section .btn-menu:hover {
+      background: #e76f00;
+      color: #fff;
+    }
+
+    .menu-grid-section .btn-details {
+      background: #fff;
+      color: #ff8d2f;
+      border: 2px solid #ff8d2f;
+      border-radius: 24px;
+      padding: 0.5em 1.5em;
+      font-weight: 600;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .menu-grid-section .btn-details:hover {
+      background: #ff8d2f;
+      color: #fff;
+    }
+
+    .menu-grid-section .icon {
+      font-size: 1.25em;
+      margin-right: 0.3em;
+      vertical-align: middle;
+    }
+
+    /* Light/Dark mode fixes for navbar */
+    body.light-mode .navbar,
+    .navbar.bg-light {
+      background: #fff !important;
+      color: #222;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    }
+
+    body.light-mode .navbar .nav-link,
+    .navbar.bg-light .nav-link {
+      color: #222 !important;
+    }
+
+    body.dark-mode .navbar,
+    .navbar.bg-dark {
+      background: #222 !important;
+      color: #fff;
+    }
+
+    body.dark-mode .navbar .nav-link,
+    .navbar.bg-dark .nav-link {
+      color: #fff !important;
+    }
+
+    /* Card and button fixes */
+    .menu-grid-section .card {
+      background: var(--bs-card-bg, #fff);
+      border-radius: 1rem;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+      transition: box-shadow 0.2s;
+    }
+
+    .menu-grid-section .card-body {
+      background: transparent;
+    }
+
+    .menu-grid-section .btn-menu {
+      font-size: 1em;
+      padding: 0.4em 1em;
+      border-radius: 2em;
+      margin-top: 0.5em;
+    }
+
+    .menu-grid-section .btn-menu.btn-sm {
+      font-size: 0.95em;
+      padding: 0.35em 0.8em;
+    }
+
+    /* Filter bar */
+    #category-filters .btn {
+      min-width: 90px;
+      border-radius: 2em;
+    }
+
+    #category-filters .btn.active,
+    #category-filters .btn:active {
+      background: #ff8d2f;
+      color: #fff;
+      border-color: #ff8d2f;
+    }
+
+    /* Responsive card grid */
+    @media (max-width: 575.98px) {
+      .menu-grid-section .card {
+        margin-bottom: 1.2rem;
+      }
+
+      .menu-grid-section .btn-menu {
+        width: 100%;
+        margin-top: 0.7em;
+      }
+    }
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 .tab-style3 {
   display: -webkit-box;
   display: -ms-flexbox;

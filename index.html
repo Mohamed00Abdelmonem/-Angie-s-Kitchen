@@ -1,417 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Angie's Kitchen" />
-    <meta name="keywords" content="Angie's Kitchen" />
-    <meta name="author" content="Angie's Kitchen" />
-    <link
-      rel="icon"
-      href="assets/images/logo/favicon.png"
-      type="image/x-icon"
-    />
-    <title>Angie's Kitchen</title>
-    <link rel="apple-touch-icon" href="assets/images/svg/logo.png" />
-    <meta name="theme-color" content="#ff8d2f" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Angie's Kitchen" />
-    <meta
-      name="msapplication-TileImage"
-      content="assets/images/logo/favicon.png"
-    />
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!--Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Angie's Kitchen" />
+  <meta name="keywords" content="Angie's Kitchen" />
+  <meta name="author" content="Angie's Kitchen" />
+  <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon" />
+  <title>Angie's Kitchen</title>
+  <link rel="apple-touch-icon" href="assets/images/svg/logo.png" />
+  <meta name="theme-color" content="#ff8d2f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="Angie's Kitchen" />
+  <meta name="msapplication-TileImage" content="assets/images/logo/favicon.png" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- bootstrap css -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      id="rtl-link"
-      href="assets/css/vendors/bootstrap.css"
-    />
+  <!--Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
-    <!-- swiper css -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="assets/css/vendors/swiper-bundle.min.css"
-    />
+  <!-- bootstrap css -->
+  <link rel="stylesheet" type="text/css" id="rtl-link" href="assets/css/vendors/bootstrap.css" />
 
-    <!-- remixicon css -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="assets/css/vendors/remixicon.css"
-    />
+  <!-- swiper css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/vendors/swiper-bundle.min.css" />
 
-    <!-- Theme css -->
-    <link
-      rel="stylesheet"
-      id="change-link"
-      type="text/css"
-      href="assets/css/style.css"
-    />
-  </head>
+  <!-- remixicon css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/vendors/remixicon.css" />
 
+  <!-- Theme css -->
+  <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css" />
+</head>
 
-
-  
-  <body class="position-relative">
-    <!-- skeleton loader start -->
-    <!-- skeleton loader start -->
-    <div class="skeleton-loader">
-      <header>
-        <div class="container">
-          <nav class="navbar navbar-expand-lg p-0">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#offcanvasNavbar"
-            >
-              <span class="navbar-toggler-icon">
-                <i class="ri-menu-line"></i>
-              </span>
-            </button>
-            <a href="index.html">
-              <img
-                class="img-fluid logo"
-                src="assets/images/svg/logo.png"
-                alt="logo"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="#!"
-              data-bs-toggle="modal"
-              data-bs-target="#location"
-              class="btn btn-sm theme-btn location-btn mt-0 ms-3 d-flex align-content-center gap-1"
-            >
-              <i class="ri-map-pin-line"></i> Angie
-            </a>
-            <div class="nav-option order-md-2">
-              <div class="dropdown-button"></div>
-            </div>
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasSkeleton"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasSkeletonLabel">
-                  Menu
-                </h5>
-                <button
-                  class="navbar-toggler btn-close"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#offcanvasSkeleton"
-                  data-bs-dismiss="offcanvas"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-center flex-grow-1">
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#!"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#!"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                      >Order</a
-                    >
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <section class="home-wrapper section-b-space">
-        <div class="container text-center">
-          <div class="loader-gif">
-            <img
-              src="assets/images/gif/food.gif"
-              alt="food-gif"
-              class="img-fluid"
-            />
-          </div>
-          <h2>
-            Serving the finest Halal Arabic and Egyptian cuisine near you...
-          </h2>
-        </div>
-      </section>
-      <section class="categories-section section-b-space">
-        <div class="container">
-          <div class="title placeholder-glow">
-            <span class="placeholder col-md-2 col-5"></span>
-            <p class="placeholder col-5 w-50"></p>
-          </div>
-          <div class="theme-arrow">
-            <div class="swiper categories-slider categories-style">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide placeholder-glow">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="restaurant-listing.html" class="food-categories">
-                    <span class="categories-img"></span>
-                    <h4 class="placeholder col-10"></h4>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="banner-section section-b-space">
-        <div class="container">
-          <div class="title placeholder-glow">
-            <span class="placeholder col-md-2 col-5"></span>
-            <p class="placeholder col-5 w-50"></p>
-          </div>
-          <div class="position-relative">
-            <div class="swiper banner1-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide placeholder-glow">
-                  <div class="banner-part">
-                    <a href="offer.html" class="placeholder"></a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="banner-part">
-                    <a href="offer.html" class="placeholder"></a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="banner-part">
-                    <a href="offer.html" class="placeholder"></a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="banner-part">
-                    <a href="offer.html" class="placeholder"></a>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="banner-part">
-                    <a href="offer.html" class="placeholder"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!-- skeleton loader end -->
-
-    <!-- Header section start -->
+<body class="position-relative">
+  <!-- skeleton loader start -->
+  <div class="skeleton-loader">
     <header>
       <div class="container">
         <nav class="navbar navbar-expand-lg p-0">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#offcanvasNavbar"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#offcanvasNavbar">
             <span class="navbar-toggler-icon">
               <i class="ri-menu-line"></i>
             </span>
           </button>
           <a href="index.html">
-            <img
-              class="img-fluid logo"
-              src="assets/images/svg/logo.png"
-              alt="logo"
-              style="width: 80px; height: auto"
-            />
+            <img class="img-fluid logo" src="assets/images/svg/logo.png" alt="logo" />
           </a>
-          <a
-            target="_blank"
-            href="#!"
-            data-bs-toggle="modal"
-            data-bs-target="#location"
-            class="btn btn-sm theme-btn location-btn mt-0 ms-3 d-flex align-content-center gap-1"
-          >
-            Angie
+          <a target="_blank" href="#!" data-bs-toggle="modal" data-bs-target="#location"
+            class="btn btn-sm theme-btn location-btn mt-0 ms-3 d-flex align-content-center gap-1">
+            <i class="ri-map-pin-line"></i> Angie
           </a>
-          <div class="nav-option order-md-2"></div>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-          >
+          <div class="nav-option order-md-2">
+            <div class="dropdown-button"></div>
+          </div>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasSkeleton">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button
-                class="navbar-toggler btn-close"
-                id="offcanvas-close"
-              ></button>
+              <h5 class="offcanvas-title" id="offcanvasSkeletonLabel">
+                Menu
+              </h5>
+              <button class="navbar-toggler btn-close" type="button" data-bs-toggle="collapse"
+                data-bs-target="#offcanvasSkeleton" data-bs-dismiss="offcanvas"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-center flex-grow-1">
-                <li class="nav-item mega-menu">
-                  <a
-                    class="nav-link -toggle"
-                    href="#!"
-                    id="accountDropdown"
-                    role="button"
-                    aria-expanded="false"
-                    >Home</a
-                  >
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#!"
-                    id="orderMenu"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    >Order</a
-                  >
-                  <ul
-                    class="dropdown-menu mt-0 border-0"
-                    aria-labelledby="orderMenu"
-                  >
-                    <li>
-                      <a class="dropdown-item" href="menu-listing.html"
-                        >Menu listing</a
-                      >
-                    </li>
-                  </ul>
+                  <a class="nav-link dropdown-toggle" href="#!" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Order</a>
                 </li>
 
                 <li class="nav-item">
@@ -423,361 +87,170 @@
         </nav>
       </div>
     </header>
-    <!-- Header Section end -->
-
-    <!-- home section start -->
-    <section id="home" class="home-wrapper section-b-space overflow-hidden">
-      <div class="background-effect">
-        <div class="main-circle">
-          <div class="main-circle circle-1">
-            <div class="main-circle circle-2"></div>
-          </div>
+    <section class="home-wrapper section-b-space">
+      <div class="container text-center">
+        <div class="loader-gif">
+          <img src="assets/images/gif/food.gif" alt="food-gif" class="img-fluid" />
         </div>
-      </div>
-      <div class="container text-center position-relative">
-        <h1>Angie's Kitchen</h1>
         <h2>
           Serving the finest Halal Arabic and Egyptian cuisine near you...
         </h2>
-        <div class="search-section">
-          <form class="auth-form search-head" target="_blank">
-            <div class="form-group">
-              <div class="form-input mb-0">
-                <input
-                  type="search"
-                  class="form-control search"
-                  id="inputusername"
-                  placeholder="Search"
-                />
-                <i class="ri-search-line search-icon"></i>
-              </div>
-            </div>
-          </form>
-          <a class="btn theme-btn mt-0" href="#" role="button">Search</a>
-        </div>
-        <ul class="home-features-list d-md-flex d-none">
-          <li>
-            <div class="home-features-box">
-              <img
-                class="img-fluid icon"
-                src="assets/images/svg/routing.svg"
-                alt="routing"
-              />
-              <h6>Wide Map</h6>
-            </div>
-          </li>
-          <li>
-            <div class="home-features-box">
-              <img
-                class="img-fluid icon"
-                src="assets/images/svg/3d-rotate.svg"
-                alt="3d-rotate"
-              />
-              <h6>Easiest Order</h6>
-            </div>
-          </li>
-          <li>
-            <div class="home-features-box">
-              <img
-                class="img-fluid icon"
-                src="assets/images/svg/truck.svg"
-                alt="truck"
-              />
-              <h6>Most Delivery</h6>
-            </div>
-          </li>
-        </ul>
       </div>
     </section>
-    <!-- home section end -->
-
-    <!-- home section end -->
-
-    <!-- categories section starts -->
     <section class="categories-section section-b-space">
-      <img
-        src="assets/images/scooter.png"
-        class="scooter-img img-fluid d-md-inline-block d-none"
-        alt="animation-scooter"
-      />
       <div class="container">
-        <div class="title">
-          <h2>Categories</h2>
-          <div class="loader-line"></div>
-          <div class="sub-title">
-            <p>
-              Browse out top categories here to discover different food cuision.
-            </p>
-          </div>
+        <div class="title placeholder-glow">
+          <span class="placeholder col-md-2 col-5"></span>
+          <p class="placeholder col-5 w-50"></p>
         </div>
         <div class="theme-arrow">
           <div class="swiper categories-slider categories-style">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-1.png"
-                    alt="p-1"
-                  />
-                  <h4 class="dark-text">Pizza</h4>
+              <div class="swiper-slide placeholder-glow">
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-2.png"
-                    alt="p-2"
-                  />
-                  <h4 class="dark-text">Chicken</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-3.png"
-                    alt="p-3"
-                  />
-                  <h4 class="dark-text">Burger</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-5.png"
-                    alt="p-5"
-                  />
-                  <h4 class="dark-text">Fries</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-6.png"
-                    alt="p-6"
-                  />
-                  <h4 class="dark-text">Boritto</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-7.png"
-                    alt="p-7"
-                  />
-                  <h4 class="dark-text">Taco</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-8.png"
-                    alt="p-8"
-                  />
-                  <h4 class="dark-text">Muffin</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-9.png"
-                    alt="p-9"
-                  />
-                  <h4 class="dark-text">Meat</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-10.png"
-                    alt="p-5"
-                  />
-                  <h4 class="dark-text">Panner</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-11.png"
-                    alt="p-11"
-                  />
-                  <h4 class="dark-text">Hotdog</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-12.png"
-                    alt="p-12"
-                  />
-                  <h4 class="dark-text">Donuts</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-13.png"
-                    alt="p-13"
-                  />
-                  <h4 class="dark-text">Coffee</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-14.png"
-                    alt="p-14"
-                  />
-                  <h4 class="dark-text">Sandwich</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-15.png"
-                    alt="p-15"
-                  />
-                  <h4 class="dark-text">Noddle</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-16.png"
-                    alt="p-16"
-                  />
-                  <h4 class="dark-text">Pasta</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-17.png"
-                    alt="p-17"
-                  />
-                  <h4 class="dark-text">Meggi</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-18.png"
-                    alt="p-18"
-                  />
-                  <h4 class="dark-text">Momos</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-19.png"
-                    alt="p-19"
-                  />
-                  <h4 class="dark-text">Salad</h4>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="menu.html" class="food-categories">
-                  <img
-                    class="img-fluid categories-img"
-                    src="assets/images/product/p-20.png"
-                    alt="p-20"
-                  />
-                  <h4 class="dark-text">Biryani</h4>
+                <a href="restaurant-listing.html" class="food-categories">
+                  <span class="categories-img"></span>
+                  <h4 class="placeholder col-10"></h4>
                 </a>
               </div>
             </div>
           </div>
-          <div class="swiper-button-next categories-next"></div>
-          <div class="swiper-button-prev categories-prev"></div>
         </div>
       </div>
     </section>
-    <!-- categories section end -->
-
-    <!-- banner section starts -->
     <section class="banner-section section-b-space">
       <div class="container">
-        <div class="title">
-          <h2>Month’s Deal</h2>
-          <div class="loader-line"></div>
-          <div class="sub-title">
-            <p>Take a benefit from our latest offers.</p>
-          </div>
+        <div class="title placeholder-glow">
+          <span class="placeholder col-md-2 col-5"></span>
+          <p class="placeholder col-5 w-50"></p>
         </div>
         <div class="position-relative">
           <div class="swiper banner1-slider">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide placeholder-glow">
                 <div class="banner-part">
-                  <a href="offer.html">
-                    <img
-                      class="img-fluid banner-img"
-                      src="assets/images/banner/banner1.jpg"
-                      alt="banner"
-                    />
-                  </a>
+                  <a href="offer.html" class="placeholder"></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="banner-part">
-                  <a href="offer.html">
-                    <img
-                      class="img-fluid banner-img"
-                      src="assets/images/banner/banner2.jpg"
-                      alt="banner"
-                    />
-                  </a>
+                  <a href="offer.html" class="placeholder"></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="banner-part">
-                  <a href="offer.html">
-                    <img
-                      class="img-fluid banner-img"
-                      src="assets/images/banner/banner3.jpg"
-                      alt="banner"
-                    />
-                  </a>
+                  <a href="offer.html" class="placeholder"></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="banner-part">
-                  <a href="offer.html">
-                    <img
-                      class="img-fluid banner-img"
-                      src="assets/images/banner/banner4.jpg"
-                      alt="banner"
-                    />
-                  </a>
+                  <a href="offer.html" class="placeholder"></a>
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="banner-part">
-                  <a href="offer.html">
-                    <img
-                      class="img-fluid banner-img"
-                      src="assets/images/banner/banner5.jpg"
-                      alt="banner"
-                    />
-                  </a>
+                  <a href="offer.html" class="placeholder"></a>
                 </div>
               </div>
             </div>
@@ -785,634 +258,834 @@
         </div>
       </div>
     </section>
-    <!-- banner section end -->
+  </div>
+  <!-- skeleton loader end -->
 
-    <!-- Angie’s Kitchen Menu section starts -->
-    <section class="menu-grid-section section-b-space">
-      <div class="container">
-        <div class="title">
-          <h2>Angie’s Kitchen Menu</h2>
-          <div class="loader-line"></div>
-          <div class="sub-title">
-            <p>
-              Order your favorite meals and share your location for fast
-              delivery!
-            </p>
+  <!-- Header section start -->
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg p-0">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#offcanvasNavbar">
+          <span class="navbar-toggler-icon">
+            <i class="ri-menu-line"></i>
+          </span>
+        </button>
+        <a href="index.html">
+          <img class="img-fluid logo" src="assets/images/svg/logo.png" alt="logo" style="width: 80px; height: auto" />
+        </a>
+        <a target="_blank" href="#!" data-bs-toggle="modal" data-bs-target="#location"
+          class="btn btn-sm theme-btn location-btn mt-0 ms-3 d-flex align-content-center gap-1">
+          Angie
+        </a>
+        <div class="nav-option order-md-2"></div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button class="navbar-toggler btn-close" id="offcanvas-close"></button>
           </div>
-        </div>
-
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-          <!-- Sample Dish 1 -->
-          <!-- Sample Dish 1 -->
-          <div class="col-md-4 col-sm-6 col-12">
-            <div class="card h-100 shadow-sm" style="border-radius: 12px; overflow: hidden; border: none;">
-              <img
-                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
-                class="card-img-top"
-                alt="Koshari"
-                style="height: 200px; object-fit: cover;"
-              />
-              <div
-                class="card-body d-flex flex-column"
-                data-categories="Egyptian,Vegetarian"
-                style="padding: 20px;"
-              >
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                  <h5 class="card-title" style="margin: 0; font-weight: 600; font-size: 1.25rem;">
-                    Koshari
-                  </h5>
-                  <span class="badge" style="background-color: #FFD700; color: #333; font-weight: 500;">
-                    <i class="ri-fire-line icon"></i> Popular
-                  </span>
-                </div>
-                
-                <div class="mb-3" style="color: #ff6b00; font-weight: 600; font-size: 1.1rem;">
-                  $8.99
-                </div>
-                
-                <p class="card-text" style="color: #555; margin-bottom: 15px; line-height: 1.5;">
-                  A beloved Egyptian street food featuring rice, lentils, pasta,
-                  chickpeas, and crispy onions, topped with tomato sauce.
-                </p>
-                
-                <ul class="list-inline mb-3" style="margin: 0; padding: 0;">
-                  <li class="list-inline-item">
-                    <span class="badge" style="background-color: #28a745; color: white;">
-                      <i class="ri-leaf-line icon"></i> Vegetarian
-                    </span>
-                  </li>
-                  <li class="list-inline-item">
-                    <span class="badge" style="background-color: #17a2b8; color: white;">
-                      <i class="ri-restaurant-line icon"></i> Egyptian
-                    </span>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1">
+              <li class="nav-item mega-menu">
+                <a class="nav-link -toggle" href="#!" id="accountDropdown" role="button"
+                  aria-expanded="false">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#!" id="orderMenu" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Order</a>
+                <ul class="dropdown-menu mt-0 border-0" aria-labelledby="orderMenu">
+                  <li>
+                    <a class="dropdown-item" href="menu-listing.html">Menu listing</a>
                   </li>
                 </ul>
-                
-                <div class="mt-auto d-flex flex-column gap-2">
-                  <a
-                    href="dish-details.html?dish=Koshari"
-                    class="btn btn-details"
-                    style="
-                      display: inline-block;
-                      background-color: #17a2b8;
-                      color: white;
-                      padding: 10px;
-                      border-radius: 8px;
-                      text-decoration: none;
-                      font-weight: 500;
-                      text-align: center;
-                      transition: all 0.3s;
-                    "
-                    onmouseover="this.style.backgroundColor='#138496'"
-                    onmouseout="this.style.backgroundColor='#17a2b8'"
-                  >
-                    <i class="ri-eye-line icon"></i> View Details
-                  </a>
+              </li>
 
-                  <button
-                    type="button"
-                    class="btn btn-menu"
-                    onclick="openLocationModal('Koshari')"
-                    style="
-                      background-color: #ff8c00;
-                      color: white;
-                      border: none;
-                      padding: 10px;
-                      border-radius: 8px;
-                      font-weight: 500;
-                      transition: all 0.3s;
-                    "
-                    onmouseover="this.style.backgroundColor='#e67300'"
-                    onmouseout="this.style.backgroundColor='#ff8c00'"
-                  >
-                    <i class="ri-map-pin-user-line icon"></i> Location & Order
-                  </button>
-                </div>
-                
-                <small class="text-muted d-block mt-2" style="font-size: 0.75rem; text-align: center;">
-                  After clicking Order, please use WhatsApp's attach button to
-                  share your live location, or send your Google Maps location
-                  link.
-                </small>
-              </div>
-            </div>
-          </div>
-          <!-- Molokhia Card -->
-          <div class="col-md-4 col-sm-6 col-12">
-            <div class="card h-100 shadow-sm" style="border-radius: 12px; overflow: hidden; border: none;">
-              <img
-                src="https://i0.wp.com/eyesclosedcooking.com/wp-content/uploads/2023/01/Egyptian_Molokhia_1.jpg?fit=1024%2C682&ssl=1"
-                class="card-img-top"
-                alt="Molokhia"
-                style="height: 200px; object-fit: cover;"
-              />
-              <div
-                class="card-body d-flex flex-column"
-                data-categories="Egyptian,Vegetarian"
-                style="padding: 20px;"
-              >
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                  <h5 class="card-title" style="margin: 0; font-weight: 600; font-size: 1.25rem;">
-                    Molokhia
-                  </h5>
-                  <span class="badge" style="background-color: #28a745; color: white; font-weight: 500;">
-                    <i class="ri-leaf-line icon"></i> Healthy
-                  </span>
-                </div>
-                
-                <div class="mb-3" style="color: #ff6b00; font-weight: 600; font-size: 1.1rem;">
-                  $9.99
-                </div>
-                
-                <p class="card-text" style="color: #555; margin-bottom: 15px; line-height: 1.5;">
-                  A traditional green soup made from jute leaves, garlic, and
-                  coriander. Served with rice and chicken or rabbit.
-                </p>
-                
-                <ul class="list-inline mb-3" style="margin: 0; padding: 0;">
-                  <li class="list-inline-item">
-                    <span class="badge" style="background-color: #17a2b8; color: white;">
-                      <i class="ri-restaurant-line icon"></i> Egyptian
-                    </span>
-                  </li>
-                </ul>
-                
-                <div class="mt-auto d-flex flex-column gap-2">
-                  <a
-                    href="dish-details.html?dish=Molokhia"
-                    class="btn btn-details"
-                    style="
-                      display: inline-block;
-                      background-color: #17a2b8;
-                      color: white;
-                      padding: 10px;
-                      border-radius: 8px;
-                      text-decoration: none;
-                      font-weight: 500;
-                      text-align: center;
-                      transition: all 0.3s;
-                    "
-                    onmouseover="this.style.backgroundColor='#138496'"
-                    onmouseout="this.style.backgroundColor='#17a2b8'"
-                  >
-                    <i class="ri-eye-line icon"></i> View Details
-                  </a>
-
-                  <button
-                    type="button"
-                    class="btn btn-menu"
-                    onclick="openLocationModal('Molokhia')"
-                    style="
-                      background-color: #ff8c00;
-                      color: white;
-                      border: none;
-                      padding: 10px;
-                      border-radius: 8px;
-                      font-weight: 500;
-                      transition: all 0.3s;
-                    "
-                    onmouseover="this.style.backgroundColor='#e67300'"
-                    onmouseout="this.style.backgroundColor='#ff8c00'"
-                  >
-                    <i class="ri-map-pin-user-line icon"></i> Location & Order
-                  </button>
-                </div>
-                
-                <small class="text-muted d-block mt-2" style="font-size: 0.75rem; text-align: center;">
-                  After clicking Order, please use WhatsApp's attach button to
-                  share your live location, or send your Google Maps location
-                  link.
-                </small>
-              </div>
-            </div>
-          </div>
-
-          <!-- Kofta Card -->
-          <div class="col-md-4 col-sm-6 col-12">
-            <div class="card h-100 shadow-sm" style="border-radius: 12px; overflow: hidden; border: none;">
-              <img
-                src="https://www.spoonforkbacon.com/wp-content/uploads/2020/05/Lamb_kofta-recipe-card.jpg"
-                class="card-img-top"
-                alt="Kofta"
-                style="height: 200px; object-fit: cover;"
-              />
-              <div
-                class="card-body d-flex flex-column"
-                data-categories="Egyptian,Vegetarian"
-                style="padding: 20px;"
-              >
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                  <h5 class="card-title" style="margin: 0; font-weight: 600; font-size: 1.25rem;">
-                    Kofta
-                  </h5>
-                  <span class="badge" style="background-color: #dc3545; color: white; font-weight: 500;">
-                    <i class="ri-hotspot-line icon"></i> Spicy
-                  </span>
-                </div>
-                
-                <div class="mb-3" style="color: #ff6b00; font-weight: 600; font-size: 1.1rem;">
-                  $12.99
-                </div>
-                
-                <p class="card-text" style="color: #555; margin-bottom: 15px; line-height: 1.5;">
-                  Spiced ground meat (usually lamb or beef) mixed with herbs and onions, 
-                  shaped into cylinders and grilled to perfection.
-                </p>
-                
-                <ul class="list-inline mb-3" style="margin: 0; padding: 0;">
-                  <li class="list-inline-item">
-                    <span class="badge" style="background-color: #FFD700; color: #333;">
-                      <i class="ri-star-line icon"></i> Arabic
-                    </span>
-                  </li>
-                </ul>
-                
-                <div class="mt-auto d-flex flex-column gap-2">
-                  <a
-                    href="dish-details.html?dish=Kofta"
-                    class="btn btn-details"
-                    style="
-                      display: inline-block;
-                      background-color: #17a2b8;
-                      color: white;
-                      padding: 10px;
-                      border-radius: 8px;
-                      text-decoration: none;
-                      font-weight: 500;
-                      text-align: center;
-                      transition: all 0.3s;
-                    "
-                    onmouseover="this.style.backgroundColor='#138496'"
-                    onmouseout="this.style.backgroundColor='#17a2b8'"
-                  >
-                    <i class="ri-eye-line icon"></i> View Details
-                  </a>
-
-                  <button
-                    type="button"
-                    class="btn btn-menu"
-                    onclick="openLocationModal('Kofta')"
-                    style="
-                      background-color: #ff8c00;
-                      color: white;
-                      border: none;
-                      padding: 10px;
-                      border-radius: 8px;
-                      font-weight: 500;
-                      transition: all 0.3s;
-                    "
-                    onmouseover="this.style.backgroundColor='#e67300'"
-                    onmouseout="this.style.backgroundColor='#ff8c00'"
-                  >
-                    <i class="ri-map-pin-user-line icon"></i> Location & Order
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Add more dishes as needed -->
-        </div>
-      </div>
-    </section>
-    <!-- Angie’s Kitchen Menu section end -->
-
-    <!-- app section starts -->
-    <section class="app-section">
-      <div class="container">
-        <div class="d-flex align-items-center">
-          <div class="app-img">
-            <img
-              class="img-fluid phone"
-              src="assets/images/service-phone.png"
-              alt="app-phone"
-            />
-          </div>
-          <div class="app-content">
-            <h2>Angie App : Online & Mobile Ordering</h2>
-            <h5>
-              Get the app for free and place takeout orders online whenever you
-              want.
-            </h5>
-            <div class="app-buttons d-flex align-items-center gap-3">
-              <a href="https://www.apple.com/in/app-store/">
-                <img
-                  class="img-fluid app-btn"
-                  src="assets/images/svg/app-store.svg"
-                  alt="app-store"
-                />
-              </a>
-              <a href="https://play.google.com/store/apps">
-                <img
-                  class="img-fluid app-btn"
-                  src="assets/images/svg/google-play.svg"
-                  alt="google-play"
-                />
-              </a>
-            </div>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- app section end -->
+      </nav>
+    </div>
+  </header>
+  <!-- Header Section end -->
 
-    <!-- footer section starts -->
-    <footer class="footer-section section-t-space" style="background-color: #35393cff; padding: 40px 0; font-family: Arial, sans-serif;">
-      <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
-        <div class="main-footer">
-          <div class="row g-3" style="display: flex; flex-wrap: wrap; margin: 0 -15px;">
-            <div class="col-xl-12" style="flex: 0 0 100%; max-width: 100%; padding: 0 15px;">
-              <div class="footer-logo-part" style="text-align: center; margin-bottom: 30px;">
-                <img
-                  class="img-fluid logo"
-                  src="assets/images/svg/logo.png"
-                  style="width: 150px; height: 150px; margin: 0 auto 20px; display: block;"
-                  alt="logo"
-                />
-                <p style="max-width: 600px; margin: 0 auto 25px; line-height: 1.6; color: #ffffff; font-size: 16px;">
-                  Welcome to our online order website! Here, you can browse our
-                  wide selection of products and place orders from the comfort
-                  of your own home.
-                </p>
-                <div class="social-media-part">
-                  <ul class="social-icon" style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 15px;">
-                    <li>
-                      <a href="https://www.facebook.com/login/" style="color: #4267B2; font-size: 24px;">
-                        <i class="ri-facebook-fill icon"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/i/flow/login" style="color: #1DA1F2; font-size: 24px;">
-                        <i class="ri-twitter-fill icon"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/login/" style="color: #0077b5; font-size: 24px;">
-                        <i class="ri-linkedin-fill icon"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/accounts/login/" style="color: #E1306C; font-size: 24px;">
-                        <i class="ri-instagram-fill icon"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.youtube.com/" style="color: #FF0000; font-size: 24px;">
-                        <i class="ri-youtube-fill icon"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bottom-footer-part" style="border-top: 1px solid #ddd; padding-top: 20px; margin-top: 30px;">
-          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
-            <h6 style="margin: 0; color: #ffffff; font-size: 14px;">@ Copyright 2025 Angie's Kitchen . All rights Reserved.</h6>
-            <img
-              class="img-fluid cards"
-              src="assets/images/icons/footer-card.png"
-              alt="card"
-              style="max-height: 30px;"
-            />
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- footer section end -->
-
-    <!-- Location Order Modal -->
-    <div
-      class="modal fade"
-      id="locationOrderModal"
-      tabindex="-1"
-      aria-labelledby="locationOrderModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="locationOrderModalLabel">
-              Share Your Location &amp; Order
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div id="location-status" class="mb-3">
-              To send your exact location with your order, please allow location
-              access.
-            </div>
-            <div id="location-link" class="mb-2"></div>
-            <div id="wa-order-btn"></div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
+  <!-- home section start -->
+  <section id="home" class="home-wrapper section-b-space overflow-hidden">
+    <div class="background-effect">
+      <div class="main-circle">
+        <div class="main-circle circle-1">
+          <div class="main-circle circle-2"></div>
         </div>
       </div>
     </div>
-
-    <!-- mobile fix menu start -->
-    <div class="mobile-menu d-md-none d-block mobile-cart">
-      <ul>
-        <li class="active">
-          <a href="index.html" class="menu-box">
-            <i class="ri-home-4-line"></i>
-            <span>Home</span>
-          </a>
+    <div class="container text-center position-relative">
+      <h1>Angie's Kitchen</h1>
+      <h2>
+        Serving the finest Halal Arabic and Egyptian cuisine near you...
+      </h2>
+      <div class="search-section">
+        <form class="auth-form search-head" target="_blank">
+          <div class="form-group">
+            <div class="form-input mb-0">
+              <input type="search" class="form-control search" id="inputusername" placeholder="Search" />
+              <i class="ri-search-line search-icon"></i>
+            </div>
+          </div>
+        </form>
+        <a class="btn theme-btn mt-0" href="#" role="button">Search</a>
+      </div>
+      <ul class="home-features-list d-md-flex d-none">
+        <li>
+          <div class="home-features-box">
+            <img class="img-fluid icon" src="assets/images/svg/routing.svg" alt="routing" />
+            <h6>Wide Map</h6>
+          </div>
+        </li>
+        <li>
+          <div class="home-features-box">
+            <img class="img-fluid icon" src="assets/images/svg/3d-rotate.svg" alt="3d-rotate" />
+            <h6>Easiest Order</h6>
+          </div>
+        </li>
+        <li>
+          <div class="home-features-box">
+            <img class="img-fluid icon" src="assets/images/svg/truck.svg" alt="truck" />
+            <h6>Most Delivery</h6>
+          </div>
         </li>
       </ul>
     </div>
-    <!-- mobile fix menu end -->
+  </section>
+  <!-- home section end -->
 
-    <!-- theme btn start -->
-    <div class="theme-btns">
-      <button type="button" class="btntheme mode-change-button">
-        <i id="themeIcon" class="ri-moon-line icon mode-icon"></i>
-        <span class="text-value">Dark</span>
-      </button>
+  <!-- categories section starts -->
+  <section class="categories-section section-b-space">
+    <img src="assets/images/scooter.png" class="scooter-img img-fluid d-md-inline-block d-none"
+      alt="animation-scooter" />
+    <div class="container">
+      <div class="title">
+        <h2>Categories</h2>
+        <div class="loader-line"></div>
+        <div class="sub-title">
+          <p>
+            Browse out top categories here to discover different food cuision.
+          </p>
+        </div>
+      </div>
+      <div class="theme-arrow">
+        <div class="swiper categories-slider categories-style">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-1.png" alt="p-1" />
+                <h4 class="dark-text">Pizza</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-2.png" alt="p-2" />
+                <h4 class="dark-text">Chicken</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-3.png" alt="p-3" />
+                <h4 class="dark-text">Burger</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-5.png" alt="p-5" />
+                <h4 class="dark-text">Fries</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-6.png" alt="p-6" />
+                <h4 class="dark-text">Boritto</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-7.png" alt="p-7" />
+                <h4 class="dark-text">Taco</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-8.png" alt="p-8" />
+                <h4 class="dark-text">Muffin</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-9.png" alt="p-9" />
+                <h4 class="dark-text">Meat</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-10.png" alt="p-5" />
+                <h4 class="dark-text">Panner</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-11.png" alt="p-11" />
+                <h4 class="dark-text">Hotdog</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-12.png" alt="p-12" />
+                <h4 class="dark-text">Donuts</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-13.png" alt="p-13" />
+                <h4 class="dark-text">Coffee</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-14.png" alt="p-14" />
+                <h4 class="dark-text">Sandwich</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-15.png" alt="p-15" />
+                <h4 class="dark-text">Noddle</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-16.png" alt="p-16" />
+                <h4 class="dark-text">Pasta</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-17.png" alt="p-17" />
+                <h4 class="dark-text">Meggi</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-18.png" alt="p-18" />
+                <h4 class="dark-text">Momos</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-19.png" alt="p-19" />
+                <h4 class="dark-text">Salad</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="menu.html" class="food-categories">
+                <img class="img-fluid categories-img" src="assets/images/product/p-20.png" alt="p-20" />
+                <h4 class="dark-text">Biryani</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next categories-next"></div>
+        <div class="swiper-button-prev categories-prev"></div>
+      </div>
     </div>
-    <!-- theme btn end -->
+  </section>
+  <!-- categories section end -->
 
-    <!-- tap to top start -->
-    <button class="scroll scroll-to-top">
-      <i class="ri-arrow-up-s-line arrow"></i>
-    </button>
-    <!-- tap to top end -->
-
-    <!-- location offcanvas start -->
-    <div
-      class="modal fade location-modal"
-      id="location"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-title">
-              <h5 class="fw-semibold">Select a Location</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-          </div>
-          <div class="modal-body">
-            <div class="search-section">
-              <form class="form_search" role="form">
-                <input
-                  type="search"
-                  placeholder="Search Location"
-                  class="nav-search nav-search-field"
-                />
-              </form>
-            </div>
-            <a href="#!" class="current-location">
-              <div class="current-address">
-                <i class="ri-focus-3-line focus"></i>
-                <div>
-                  <h5>Use current-location</h5>
-                  <h6>Wellington St., Ottawa, Ontario, Canada</h6>
-                </div>
+  <!-- banner section starts -->
+  <section class="banner-section section-b-space">
+    <div class="container">
+      <div class="title">
+        <h2>Month’s Deal</h2>
+        <div class="loader-line"></div>
+        <div class="sub-title">
+          <p>Take a benefit from our latest offers.</p>
+        </div>
+      </div>
+      <div class="position-relative">
+        <div class="swiper banner1-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="banner-part">
+                <a href="offer.html">
+                  <img class="img-fluid banner-img" src="assets/images/banner/banner1.jpg" alt="banner" />
+                </a>
               </div>
-              <i class="ri-arrow-right-s-line arrow"></i>
-            </a>
-            <h5 class="mt-sm-3 mt-2 fw-medium recent-title dark-text">
-              Recent Location
-            </h5>
-            <a href="#!" class="recent-location">
-              <div class="recant-address">
-                <i class="ri-map-pin-line theme-color"></i>
-                <div>
-                  <h5>Bayshore</h5>
-                  <h6>kingston St., Ottawa, Ontario, Canada</h6>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-part">
+                <a href="offer.html">
+                  <img class="img-fluid banner-img" src="assets/images/banner/banner2.jpg" alt="banner" />
+                </a>
               </div>
-            </a>
-          </div>
-          <div class="modal-footer">
-            <a href="#" class="btn gray-btn" data-bs-dismiss="modal">Close</a>
-            <a href="#" class="btn theme-btn mt-0" data-bs-dismiss="modal"
-              >Save</a
-            >
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-part">
+                <a href="offer.html">
+                  <img class="img-fluid banner-img" src="assets/images/banner/banner3.jpg" alt="banner" />
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-part">
+                <a href="offer.html">
+                  <img class="img-fluid banner-img" src="assets/images/banner/banner4.jpg" alt="banner" />
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner-part">
+                <a href="offer.html">
+                  <img class="img-fluid banner-img" src="assets/images/banner/banner5.jpg" alt="banner" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- location offcanvas end -->
+  </section>
+  <!-- banner section end -->
 
-    <!-- responsive space -->
-    <div class="responsive-space"></div>
-    <!-- responsive space -->
+  <!-- Angie’s Kitchen Menu section starts -->
+  <section class="menu-grid-section section-b-space">
+    <div class="container">
+      <div class="title">
+        <h2>Angie’s Kitchen Menu</h2>
+        <div class="loader-line"></div>
+        <div class="sub-title">
+          <p>
+            Order your favorite meals and share your location for fast
+            delivery!
+          </p>
+        </div>
+      </div>
 
-    <!-- bootstrap js -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Workaround for dropdowns in offcanvas on mobile
-        document
-          .querySelectorAll(".offcanvas .dropdown-toggle")
-          .forEach(function (dropdown) {
-            dropdown.addEventListener("click", function (e) {
-              e.stopPropagation();
-              let menu = this.nextElementSibling;
-              if (menu && menu.classList.contains("dropdown-menu")) {
-                menu.classList.toggle("show");
-              }
-            });
-          });
-      });
-    </script>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <!-- Sample Dish 1 -->
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card h-100 shadow-sm" style="border-radius: 12px; overflow: hidden; border: none;">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+              class="card-img-top" alt="Koshari" style="height: 200px; object-fit: cover;" />
+            <div class="card-body d-flex flex-column" data-categories="Egyptian,Vegetarian" style="padding: 20px;">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title" style="margin: 0; font-weight: 600; font-size: 1.25rem;">
+                  Koshari
+                </h5>
+                <span class="badge" style="background-color: #FFD700; color: #333; font-weight: 500;">
+                  <i class="ri-fire-line icon"></i> Popular
+                </span>
+              </div>
 
-    <!-- footer accordion js -->
-    <script src="assets/js/footer-accordion.js"></script>
+              <div class="mb-3" style="color: #ff6b00; font-weight: 600; font-size: 1.1rem;">
+                $8.99
+              </div>
 
-    <!-- loader js -->
-    <script src="assets/js/loader.js"></script>
+              <p class="card-text" style="color: #555; margin-bottom: 15px; line-height: 1.5;">
+                A beloved Egyptian street food featuring rice, lentils, pasta,
+                chickpeas, and crispy onions, topped with tomato sauce.
+              </p>
 
-    <!-- swiper js -->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/custom-swiper.js"></script>
+              <ul class="list-inline mb-3" style="margin: 0; padding: 0;">
+                <li class="list-inline-item">
+                  <span class="badge" style="background-color: #28a745; color: white;">
+                    <i class="ri-leaf-line icon"></i> Vegetarian
+                  </span>
+                </li>
+                <li class="list-inline-item">
+                  <span class="badge" style="background-color: #17a2b8; color: white;">
+                    <i class="ri-restaurant-line icon"></i> Egyptian
+                  </span>
+                </li>
+              </ul>
 
-    <!-- menu offcanvas js -->
+              <div class="mt-auto d-flex flex-column gap-2">
+                <a href="dish-details.html?dish=Koshari" class="btn btn-details"
+                  style="
+                      display: inline-block;
+                      background-color: #17a2b8;
+                      color: white;
+                      padding: 10px;
+                      border-radius: 8px;
+                      text-decoration: none;
+                      font-weight: 500;
+                      text-align: center;
+                      transition: all 0.3s;
+                    "
+                  onmouseover="this.style.backgroundColor='#138496'"
+                  onmouseout="this.style.backgroundColor='#17a2b8'">
+                  <i class="ri-eye-line icon"></i> View Details
+                </a>
 
-    <!-- script js -->
-    <script src="assets/js/script.js"></script>
-    <script>
-      let currentMealName = "";
-      function openLocationModal(mealName) {
-        currentMealName = mealName;
-        document.getElementById("location-status").innerHTML =
-          "To send your exact location with your order, please allow location access.";
-        document.getElementById("location-link").innerHTML = "";
-        document.getElementById("wa-order-btn").innerHTML = "";
-        var modal = new bootstrap.Modal(
-          document.getElementById("locationOrderModal")
-        );
-        modal.show();
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(
-            function (position) {
-              const lat = position.coords.latitude;
-              const lng = position.coords.longitude;
-              const gmapsLink = `https://maps.google.com/?q=${lat},${lng}`;
-              document.getElementById("location-status").innerHTML =
-                '<span class="text-success">Location found!</span>';
-              document.getElementById(
-                "location-link"
-              ).innerHTML = `Google Maps: <a href="${gmapsLink}" target="_blank">${lat.toFixed(
-                5
-              )}, ${lng.toFixed(5)}</a>`;
-              // WhatsApp message
-              const waMsg = encodeURIComponent(
-                `I'd like to order this meal (${currentMealName}) and I came through the website. Angie's Kitchen. My location: ${gmapsLink}`
-              );
-              const waLink = `https://wa.me/+201026120743?text=${waMsg}`;
-              document.getElementById(
-                "wa-order-btn"
-              ).innerHTML = `<a href="${waLink}" target="_blank" class="btn btn-menu w-100 mt-3"><i class='ri-whatsapp-line icon'></i>Send on WhatsApp</a>`;
-            },
-            function (error) {
-              document.getElementById("location-status").innerHTML =
-                '<span class="text-danger">Could not get your location. Please check browser permissions and try again.</span>';
+                <button type="button" class="btn btn-menu" onclick="openLocationModal('Koshari')"
+                  style="
+                      background-color: #ff8c00;
+                      color: white;
+                      border: none;
+                      padding: 10px;
+                      border-radius: 8px;
+                      font-weight: 500;
+                      transition: all 0.3s;
+                    "
+                  onmouseover="this.style.backgroundColor='#e67300'"
+                  onmouseout="this.style.backgroundColor='#ff8c00'">
+                  <i class="ri-map-pin-user-line icon"></i> Location & Order
+                </button>
+              </div>
+
+              <small class="text-muted d-block mt-2" style="font-size: 0.75rem; text-align: center;">
+                After clicking Order, please use WhatsApp's attach button to
+                share your live location, or send your Google Maps location
+                link.
+              </small>
+            </div>
+          </div>
+        </div>
+        <!-- Molokhia Card -->
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card h-100 shadow-sm" style="border-radius: 12px; overflow: hidden; border: none;">
+            <img
+              src="https://i0.wp.com/eyesclosedcooking.com/wp-content/uploads/2023/01/Egyptian_Molokhia_1.jpg?fit=1024%2C682&ssl=1"
+              class="card-img-top" alt="Molokhia" style="height: 200px; object-fit: cover;" />
+            <div class="card-body d-flex flex-column" data-categories="Egyptian,Vegetarian" style="padding: 20px;">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title" style="margin: 0; font-weight: 600; font-size: 1.25rem;">
+                  Molokhia
+                </h5>
+                <span class="badge" style="background-color: #28a745; color: white; font-weight: 500;">
+                  <i class="ri-leaf-line icon"></i> Healthy
+                </span>
+              </div>
+
+              <div class="mb-3" style="color: #ff6b00; font-weight: 600; font-size: 1.1rem;">
+                $9.99
+              </div>
+
+              <p class="card-text" style="color: #555; margin-bottom: 15px; line-height: 1.5;">
+                A traditional green soup made from jute leaves, garlic, and
+                coriander. Served with rice and chicken or rabbit.
+              </p>
+
+              <ul class="list-inline mb-3" style="margin: 0; padding: 0;">
+                <li class="list-inline-item">
+                  <span class="badge" style="background-color: #17a2b8; color: white;">
+                    <i class="ri-restaurant-line icon"></i> Egyptian
+                  </span>
+                </li>
+              </ul>
+
+              <div class="mt-auto d-flex flex-column gap-2">
+                <a href="dish-details.html?dish=Molokhia" class="btn btn-details"
+                  style="
+                      display: inline-block;
+                      background-color: #17a2b8;
+                      color: white;
+                      padding: 10px;
+                      border-radius: 8px;
+                      text-decoration: none;
+                      font-weight: 500;
+                      text-align: center;
+                      transition: all 0.3s;
+                    "
+                  onmouseover="this.style.backgroundColor='#138496'"
+                  onmouseout="this.style.backgroundColor='#17a2b8'">
+                  <i class="ri-eye-line icon"></i> View Details
+                </a>
+
+                <button type="button" class="btn btn-menu" onclick="openLocationModal('Molokhia')"
+                  style="
+                      background-color: #ff8c00;
+                      color: white;
+                      border: none;
+                      padding: 10px;
+                      border-radius: 8px;
+                      font-weight: 500;
+                      transition: all 0.3s;
+                    "
+                  onmouseover="this.style.backgroundColor='#e67300'"
+                  onmouseout="this.style.backgroundColor='#ff8c00'">
+                  <i class="ri-map-pin-user-line icon"></i> Location & Order
+                </button>
+              </div>
+
+              <small class="text-muted d-block mt-2" style="font-size: 0.75rem; text-align: center;">
+                After clicking Order, please use WhatsApp's attach button to
+                share your live location, or send your Google Maps location
+                link.
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kofta Card -->
+        <div class="col-md-4 col-sm-6 col-12">
+          <div class="card h-100 shadow-sm" style="border-radius: 12px; overflow: hidden; border: none;">
+            <img src="https://www.spoonforkbacon.com/wp-content/uploads/2020/05/Lamb_kofta-recipe-card.jpg"
+              class="card-img-top" alt="Kofta" style="height: 200px; object-fit: cover;" />
+            <div class="card-body d-flex flex-column" data-categories="Egyptian,Vegetarian" style="padding: 20px;">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title" style="margin: 0; font-weight: 600; font-size: 1.25rem;">
+                  Kofta
+                </h5>
+                <span class="badge" style="background-color: #dc3545; color: white; font-weight: 500;">
+                  <i class="ri-hotspot-line icon"></i> Spicy
+                </span>
+              </div>
+
+              <div class="mb-3" style="color: #ff6b00; font-weight: 600; font-size: 1.1rem;">
+                $12.99
+              </div>
+
+              <p class="card-text" style="color: #555; margin-bottom: 15px; line-height: 1.5;">
+                Spiced ground meat (usually lamb or beef) mixed with herbs and onions,
+                shaped into cylinders and grilled to perfection.
+              </p>
+
+              <ul class="list-inline mb-3" style="margin: 0; padding: 0;">
+                <li class="list-inline-item">
+                  <span class="badge" style="background-color: #FFD700; color: #333;">
+                    <i class="ri-star-line icon"></i> Arabic
+                  </span>
+                </li>
+              </ul>
+
+              <div class="mt-auto d-flex flex-column gap-2">
+                <a href="dish-details.html?dish=Kofta" class="btn btn-details"
+                  style="
+                      display: inline-block;
+                      background-color: #17a2b8;
+                      color: white;
+                      padding: 10px;
+                      border-radius: 8px;
+                      text-decoration: none;
+                      font-weight: 500;
+                      text-align: center;
+                      transition: all 0.3s;
+                    "
+                  onmouseover="this.style.backgroundColor='#138496'"
+                  onmouseout="this.style.backgroundColor='#17a2b8'">
+                  <i class="ri-eye-line icon"></i> View Details
+                </a>
+
+                <button type="button" class="btn btn-menu" onclick="openLocationModal('Kofta')"
+                  style="
+                      background-color: #ff8c00;
+                      color: white;
+                      border: none;
+                      padding: 10px;
+                      border-radius: 8px;
+                      font-weight: 500;
+                      transition: all 0.3s;
+                    "
+                  onmouseover="this.style.backgroundColor='#e67300'"
+                  onmouseout="this.style.backgroundColor='#ff8c00'">
+                  <i class="ri-map-pin-user-line icon"></i> Location & Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more dishes as needed -->
+      </div>
+    </div>
+  </section>
+  <!-- Angie’s Kitchen Menu section end -->
+
+  <!-- app section starts -->
+  <section class="app-section">
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <div class="app-img">
+          <img class="img-fluid phone" src="assets/images/service-phone.png" alt="app-phone" />
+        </div>
+        <div class="app-content">
+          <h2>Angie App : Online & Mobile Ordering</h2>
+          <h5>
+            Get the app for free and place takeout orders online whenever you
+            want.
+          </h5>
+          <div class="app-buttons d-flex align-items-center gap-3">
+            <a href="https://www.apple.com/in/app-store/">
+              <img class="img-fluid app-btn" src="assets/images/svg/app-store.svg" alt="app-store" />
+            </a>
+            <a href="https://play.google.com/store/apps">
+              <img class="img-fluid app-btn" src="assets/images/svg/google-play.svg" alt="google-play" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- app section end -->
+
+  <!-- footer section starts -->
+  <footer class="footer-section section-t-space"
+    style="background-color: #35393cff; padding: 40px 0; font-family: Arial, sans-serif;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
+      <div class="main-footer">
+        <div class="row g-3" style="display: flex; flex-wrap: wrap; margin: 0 -15px;">
+          <div class="col-xl-12" style="flex: 0 0 100%; max-width: 100%; padding: 0 15px;">
+            <div class="footer-logo-part" style="text-align: center; margin-bottom: 30px;">
+              <img class="img-fluid logo" src="assets/images/svg/logo.png"
+                style="width: 150px; height: 150px; margin: 0 auto 20px; display: block;" alt="logo" />
+              <p style="max-width: 600px; margin: 0 auto 25px; line-height: 1.6; color: #ffffff; font-size: 16px;">
+                Welcome to our online order website! Here, you can browse our
+                wide selection of products and place orders from the comfort
+                of your own home.
+              </p>
+              <div class="social-media-part">
+                <ul class="social-icon"
+                  style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 15px;">
+                  <li>
+                    <a href="https://www.facebook.com/login/" style="color: #4267B2; font-size: 24px;">
+                      <i class="ri-facebook-fill icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/i/flow/login" style="color: #1DA1F2; font-size: 24px;">
+                      <i class="ri-twitter-fill icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/login/" style="color: #0077b5; font-size: 24px;">
+                      <i class="ri-linkedin-fill icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/accounts/login/" style="color: #E1306C; font-size: 24px;">
+                      <i class="ri-instagram-fill icon"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/" style="color: #FF0000; font-size: 24px;">
+                      <i class="ri-youtube-fill icon"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer-part" style="border-top: 1px solid #ddd; padding-top: 20px; margin-top: 30px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
+          <h6 style="margin: 0; color: #ffffff; font-size: 14px;">@ Copyright 2025 Angie's Kitchen . All rights
+            Reserved.</h6>
+          <img class="img-fluid cards" src="assets/images/icons/footer-card.png" alt="card" style="max-height: 30px;" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+  <!-- Location Order Modal -->
+  <div class="modal fade" id="locationOrderModal" tabindex="-1" aria-labelledby="locationOrderModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="locationOrderModalLabel">
+            Share Your Location &amp; Order
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="location-status" class="mb-3">
+            To send your exact location with your order, please allow location
+            access.
+          </div>
+          <div id="location-link" class="mb-2"></div>
+          <div id="wa-order-btn"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile fix menu start -->
+  <div class="mobile-menu d-md-none d-block mobile-cart">
+    <ul>
+      <li class="active">
+        <a href="index.html" class="menu-box">
+          <i class="ri-home-4-line"></i>
+          <span>Home</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- mobile fix menu end -->
+
+  <!-- theme btn start -->
+  <div class="theme-btns">
+    <button type="button" class="btntheme mode-change-button">
+      <i id="themeIcon" class="ri-moon-line icon mode-icon"></i>
+      <span class="text-value">Dark</span>
+    </button>
+  </div>
+  <!-- theme btn end -->
+
+  <!-- tap to top start -->
+  <button class="scroll scroll-to-top">
+    <i class="ri-arrow-up-s-line arrow"></i>
+  </button>
+  <!-- tap to top end -->
+
+  <!-- location offcanvas start -->
+  <div class="modal fade location-modal" id="location" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h5 class="fw-semibold">Select a Location</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="search-section">
+            <form class="form_search" role="form">
+              <input type="search" placeholder="Search Location" class="nav-search nav-search-field" />
+            </form>
+          </div>
+          <a href="#!" class="current-location">
+            <div class="current-address">
+              <i class="ri-focus-3-line focus"></i>
+              <div>
+                <h5>Use current-location</h5>
+                <h6>Wellington St., Ottawa, Ontario, Canada</h6>
+              </div>
+            </div>
+            <i class="ri-arrow-right-s-line arrow"></i>
+          </a>
+          <h5 class="mt-sm-3 mt-2 fw-medium recent-title dark-text">
+            Recent Location
+          </h5>
+          <a href="#!" class="recent-location">
+            <div class="recant-address">
+              <i class="ri-map-pin-line theme-color"></i>
+              <div>
+                <h5>Bayshore</h5>
+                <h6>kingston St., Ottawa, Ontario, Canada</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn gray-btn" data-bs-dismiss="modal">Close</a>
+          <a href="#" class="btn theme-btn mt-0" data-bs-dismiss="modal">Save</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- location offcanvas end -->
+
+  <!-- responsive space -->
+  <div class="responsive-space"></div>
+  <!-- responsive space -->
+
+  <!-- bootstrap js -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Workaround for dropdowns in offcanvas on mobile
+      document
+        .querySelectorAll(".offcanvas .dropdown-toggle")
+        .forEach(function (dropdown) {
+          dropdown.addEventListener("click", function (e) {
+            e.stopPropagation();
+            let menu = this.nextElementSibling;
+            if (menu && menu.classList.contains("dropdown-menu")) {
+              menu.classList.toggle("show");
             }
-          );
-        } else {
-          document.getElementById("location-status").innerHTML =
-            '<span class="text-danger">Geolocation is not supported by your browser.</span>';
-        }
-      }
-    </script>
-    <script>
-      // Workaround for Bootstrap dropdowns inside offcanvas on mobile
-      document.addEventListener("DOMContentLoaded", function () {
-        document
-          .querySelectorAll(".offcanvas .dropdown-toggle")
-          .forEach(function (dropdown) {
-            dropdown.addEventListener("click", function (e) {
-              e.stopPropagation();
-              let menu = this.nextElementSibling;
-              if (menu && menu.classList.contains("dropdown-menu")) {
-                menu.classList.toggle("show");
-              }
-            });
           });
-      });
-    </script>
-  </body>
+        });
+    });
+  </script>
+
+  <!-- footer accordion js -->
+  <script src="assets/js/footer-accordion.js"></script>
+
+  <!-- loader js -->
+  <script src="assets/js/loader.js"></script>
+
+  <!-- swiper js -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/custom-swiper.js"></script>
+
+  <!-- script js -->
+  <script src="assets/js/script.js"></script>
+  <script>
+    let currentMealName = "";
+    function openLocationModal(mealName) {
+      currentMealName = mealName;
+      document.getElementById("location-status").innerHTML =
+        "To send your exact location with your order, please allow location access.";
+      document.getElementById("location-link").innerHTML = "";
+      document.getElementById("wa-order-btn").innerHTML = "";
+      var modal = new bootstrap.Modal(
+        document.getElementById("locationOrderModal")
+      );
+      modal.show();
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          function (position) {
+            const lat = position.coords.latitude;
+            const lng = position.coords.longitude;
+            const gmapsLink = `https://maps.google.com/?q=${lat},${lng}`;
+            document.getElementById("location-status").innerHTML =
+              '<span class="text-success">Location found!</span>';
+            document.getElementById(
+              "location-link"
+            ).innerHTML = `Google Maps: <a href="${gmapsLink}" target="_blank">${lat.toFixed(
+              5
+            )}, ${lng.toFixed(5)}</a>`;
+            // WhatsApp message
+            const waMsg = encodeURIComponent(
+              `I'd like to order this meal (${currentMealName}) and I came through the website. Angie's Kitchen. My location: ${gmapsLink}`
+            );
+            const waLink = `https://wa.me/+201026120743?text=${waMsg}`;
+            document.getElementById(
+              "wa-order-btn"
+            ).innerHTML = `<a href="${waLink}" target="_blank" class="btn btn-menu w-100 mt-3"><i class='ri-whatsapp-line icon'></i>Send on WhatsApp</a>`;
+          },
+          function (error) {
+            document.getElementById("location-status").innerHTML =
+              '<span class="text-danger">Could not get your location. Please check browser permissions and try again.</span>';
+          }
+        );
+      } else {
+        document.getElementById("location-status").innerHTML =
+          '<span class="text-danger">Geolocation is not supported by your browser.</span>';
+      }
+    }
+  </script>
+  <script>
+    // Workaround for Bootstrap dropdowns inside offcanvas on mobile
+    document.addEventListener("DOMContentLoaded", function () {
+      document
+        .querySelectorAll(".offcanvas .dropdown-toggle")
+        .forEach(function (dropdown) {
+          dropdown.addEventListener("click", function (e) {
+            e.stopPropagation();
+            let menu = this.nextElementSibling;
+            if (menu && menu.classList.contains("dropdown-menu")) {
+              menu.classList.toggle("show");
+            }
+          });
+        });
+    });
+  </script>
+</body>
+
 </html>

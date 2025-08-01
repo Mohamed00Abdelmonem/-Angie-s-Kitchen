@@ -1,1283 +1,773 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Angie's Kitchen" />
-    <meta name="keywords" content="Angie's Kitchen" />
-    <meta name="author" content="Angie's Kitchen" />
-    <link
-      rel="icon"
-      href="assets/images/logo/favicon.png"
-      type="image/x-icon"
-    />
-    <title>Angie's Kitchen</title>
-    <link rel="apple-touch-icon" href="assets/images/svg/logo.png" />
-    <meta name="theme-color" content="#ff8d2f" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Angie's Kitchen" />
-    <meta
-      name="msapplication-TileImage"
-      content="assets/images/logo/favicon.png"
-    />
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!--Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Angie's Kitchen" />
+  <meta name="keywords" content="Angie's Kitchen" />
+  <meta name="author" content="Angie's Kitchen" />
+  <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon" />
+  <title>Angie's Kitchen</title>
+  <link rel="apple-touch-icon" href="assets/images/svg/logo.png" />
+  <meta name="theme-color" content="#ff8d2f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="Angie's Kitchen" />
+  <meta name="msapplication-TileImage" content="assets/images/svg/logo.png" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- bootstrap css -->
-    <link rel="stylesheet" type="text/css" id="rtl-link" href="assets/css/vendors/bootstrap.css">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-    <!-- fancybox css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/fancybox.css">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" type="text/css" id="rtl-link" href="assets/css/vendors/bootstrap.css">
 
-    <!-- remixicon css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/vendors/remixicon.css">
+  <!-- fancybox css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/fancybox.css">
 
-    <!-- Theme css -->
-    <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css">
+  <!-- remixicon css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/vendors/remixicon.css">
+
+  <!-- Theme css -->
+  <link rel="stylesheet" id="change-link" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body class="bg-color position-relative">
 
-    <!-- Navbar Include -->
-<div id="navbar-placeholder"></div>
-<!-- End Navbar Include -->
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg p-0">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#offcanvasNavbar">
-                    <span class="navbar-toggler-icon">
-                        <i class="ri-menu-line" style="color: black;"></i>
-                    </span>
-                </button>
-               
-                <a target="_blank" href="#!" data-bs-toggle="modal" data-bs-target="#location"
-                    class="btn btn-sm theme-btn location-btn mt-0 ms-3 d-flex align-content-center gap-1">
-                    <i class="ri-map-pin-line"></i> 
-                </a>
-                <div class="nav-option order-md-2">
-                    <div class="dropdown-button">
-                        <div class="cart-button">
-                            <i class="ri-shopping-cart-line text-white cart-bag"></i>
-                        </div>
-                        <div class="onhover-box">
-                            
-                            
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                        <button class="navbar-toggler btn-close" id="offcanvas-close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-center flex-grow-1">
-                            <li class="nav-item dropdown mega-menu">
-                                <a class="nav-link dropdown-toggle" href="#!" id="accountDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Home</a>
-                                <div class="dropdown-menu mt-0 border-0 bsb-zoomIn" aria-labelledby="accountDropdown">
-                                    <div class="row row-cols-lg-5 row-cols-1 g-xl-4 g-3">
-                                        <div class="col">
-                                            <a href="index.html" class="demo-box" target="_blank">
-                                                <img src="assets/images/demo/1.png" alt="d-1"
-                                                    class="img-fluid demo-img">
-                                                <h5 class="dropdown-item">Classic</h5>
-                                            </a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="index2.html" class="demo-box" target="_blank">
-                                                <img src="assets/images/demo/2.png" alt="d-2"
-                                                    class="img-fluid demo-img">
-                                                <h5 class="dropdown-item">Elegance</h5>
-                                            </a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="index3.html" class="demo-box" target="_blank">
-                                                <img src="assets/images/demo/3.png" alt="d-3"
-                                                    class="img-fluid demo-img">
-                                                <h5 class="dropdown-item">Compact</h5>
-                                            </a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="index4.html" class="demo-box" target="_blank">
-                                                <img src="assets/images/demo/4.png" alt="d-4"
-                                                    class="img-fluid demo-img">
-                                                <h5 class="dropdown-item">Minimal</h5>
-                                            </a>
-                                        </div>
-                                        <div class="col">
-                                            <a href="index5.html" class="demo-box" target="_blank">
-                                                <img src="assets/images/demo/5.png" alt="d-5"
-                                                    class="img-fluid demo-img">
-                                                <h5 class="dropdown-item">Mordern</h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link dropdown-toggle" href="#!" id="orderMenu" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Order</a>
-                                <ul class="dropdown-menu mt-0 border-0" aria-labelledby="orderMenu">
-                                    <li>
-                                        <a class="dropdown-item" href="menu-listing.html">Menu listing</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="menu-grid.html">Menu grid</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="address.html">Address</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="checkout.html">Checkout</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="confirm-order.html">Confirm order</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="offer.html">Offer</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="order-tracking.html">Order tracking</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="payment.html">Payment</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="menu.html">Restaurant listing</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link dropdown-toggle" href="#!" id="blogMenu" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu mt-0 border-0" aria-labelledby="blogMenu">
-                                    <li>
-                                        <a class="dropdown-item" href="blog-grid-left-sidebar.html">Grid Left
-                                            Sidebar</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="blog-grid-right-sidebar.html">Grid Right
-                                            Sidebar</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="blog-list.html">Blog Listing</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="blog-details.html">Blog Details</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#!" id="pagesMenu" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu mt-0 border-0" aria-labelledby="pagesMenu">
-                                    <li><a class="dropdown-item" href="404.html">404</a></li>
-                                    <li>
-                                        <a class="dropdown-item" href="coming-soon.html">Coming soon</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="contact.html">Contact</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="empty-cart.html">Empty Cart</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
-                                    <li><a class="dropdown-item" href="otp.html">OTP</a></li>
-                                    <li>
-                                        <a class="dropdown-item" href="signin.html">Sign in</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="signup.html">Sign up</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="testimonial.html">Testimonial</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="wishlist.html">Wishlist</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!-- Header Section end -->
-
-    <!-- Menu Grid Section Start -->
-
-
-
-
-<section class="menu-grid-section section-b-space">
+  <!-- Navbar Include -->
+  <div id="navbar-placeholder"></div>
+  <!-- End Navbar Include -->
+  <header>
     <div class="container">
-        <h2 class="text-center mb-4">Angie's Kitchen Menu</h2>
-<!-- Category Filter Bar -->
-<div class="mb-4 d-flex flex-wrap gap-2 justify-content-center" id="category-filters">
-  <button class="btn btn-filter active" data-filter="all">All Dishes</button>
-  <button class="btn btn-filter" data-filter="Egyptian">Egyptian</button>
-  <button class="btn btn-filter" data-filter="Arabic">Arabic</button>
-  <button class="btn btn-filter" data-filter="Vegetarian">Vegetarian</button>
-  <button class="btn btn-filter" data-filter="Spicy">Spicy</button>
-  <button class="btn btn-filter" data-filter="Breakfast">Breakfast</button>
-</div>
+      <nav class="navbar navbar-expand-lg p-0">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#offcanvasNavbar">
+          <span class="navbar-toggler-icon">
+            <i class="ri-menu-line" style="color: black;"></i>
+          </span>
+        </button>
 
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-    <!-- Sample Dish 2 - Molokhia -->
-    <div class="col" data-categories="Egyptian,Healthy">
-    <div class="card h-100 dish-card">
-      <div class="dish-badge">Popular</div>
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" class="card-img-top dish-image" alt="Koshari">
-      <div class="card-body d-flex flex-column">
-        <div class="d-flex justify-content-between align-items-start mb-2">
-          <h5 class="dish-title">Koshari</h5>
-          <span class="dish-price">$8.99</span>
+        <a target="_blank" href="#!" data-bs-toggle="modal" data-bs-target="#location"
+          class="btn btn-sm theme-btn location-btn mt-0 ms-3 d-flex align-content-center gap-1">
+          <i class="ri-map-pin-line"></i>
+        </a>
+        <div class="nav-option order-md-2">
+          <div class="dropdown-button">
+           
+            <div class="onhover-box">
+
+
+            </div>
+          </div>
+
         </div>
-        
-        <p class="dish-description">A beloved Egyptian street food featuring rice, lentils, pasta, chickpeas, and crispy onions, topped with tomato sauce.</p>
-        
-        <div class="dish-tags mb-3">
-          <span class="tag vegetarian"><i class="ri-leaf-line"></i> Vegetarian</span>
-          <span class="tag egyptian"><i class="ri-restaurant-line"></i> Egyptian</span>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button class="navbar-toggler btn-close" id="offcanvas-close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1">
+              <li class="nav-item dropdown mega-menu">
+                <a class="nav-link dropdown-toggle" href="#!" id="accountDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                <div class="dropdown-menu mt-0 border-0 bsb-zoomIn" aria-labelledby="accountDropdown">
+                
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link dropdown-toggle" href="#!" id="orderMenu" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Order</a>
+                <ul class="dropdown-menu mt-0 border-0" aria-labelledby="orderMenu">
+                  <li>
+                    <a class="dropdown-item" href="menu-listing.html">Menu listing</a>
+                  </li>
+                  
+                </ul>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        
-        <div class="mt-auto dish-actions">
-          <a href="dish-details.html?dish=Koshari" class="btn btn-view">
-            <i class="ri-eye-line"></i> View Details
-          </a>
-          <button type="button" class="btn btn-order" onclick="openLocationModal('Koshari')">
-            <i class="ri-map-pin-user-line"></i> Order Now
-          </button>
+      </nav>
+    </div>
+  </header>
+  <!-- Header Section end -->
+
+  <!-- Menu Grid Section Start -->
+  <section class="menu-grid-section section-b-space">
+    <div class="container">
+      <h2 class="text-center mb-4">Angie's Kitchen Menu</h2>
+      <!-- Category Filter Bar -->
+      <div class="mb-4 d-flex flex-wrap gap-2 justify-content-center" id="category-filters">
+        <button class="btn btn-filter active" data-filter="all">All Dishes</button>
+        <button class="btn btn-filter" data-filter="Egyptian">Egyptian</button>
+        <button class="btn btn-filter" data-filter="Arabic">Arabic</button>
+        <button class="btn btn-filter" data-filter="Vegetarian">Vegetarian</button>
+        <button class="btn btn-filter" data-filter="Spicy">Spicy</button>
+        <button class="btn btn-filter" data-filter="Breakfast">Breakfast</button>
+      </div>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <!-- Sample Dish 2 - Molokhia -->
+        <div class="col" data-categories="Egyptian,Healthy">
+          <div class="card h-100 dish-card">
+            <div class="dish-badge">Popular</div>
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+              class="card-img-top dish-image" alt="Koshari">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="dish-title">Koshari</h5>
+                <span class="dish-price">$8.99</span>
+              </div>
+
+              <p class="dish-description">A beloved Egyptian street food featuring rice, lentils, pasta, chickpeas, and
+                crispy onions, topped with tomato sauce.</p>
+
+              <div class="dish-tags mb-3">
+                <span class="tag vegetarian"><i class="ri-leaf-line"></i> Vegetarian</span>
+                <span class="tag egyptian"><i class="ri-restaurant-line"></i> Egyptian</span>
+              </div>
+
+              <div class="mt-auto dish-actions">
+                <a href="dish-details.html?dish=Koshari" class="btn btn-view">
+                  <i class="ri-eye-line"></i> View Details
+                </a>
+                <button type="button" class="btn btn-order" onclick="openLocationModal('Koshari')">
+                  <i class="ri-map-pin-user-line"></i> Order Now
+                </button>
+              </div>
+
+              <small class="dish-note">
+                After clicking Order, please use WhatsApp's attach button to share your live location.
+              </small>
+            </div>
+          </div>
         </div>
-        
-        <small class="dish-note">
-          After clicking Order, please use WhatsApp's attach button to share your live location.
-        </small>
+        <!-- Sample Dish 2 - Molokhia -->
+        <div class="col" data-categories="Egyptian,Healthy">
+          <div class="card h-100 dish-card">
+            <div class="dish-badge bg-success">Healthy</div>
+            <img
+              src="https://i0.wp.com/eyesclosedcooking.com/wp-content/uploads/2023/01/Egyptian_Molokhia_1.jpg?fit=1024%2C682&ssl=1"
+              class="card-img-top dish-image" alt="Molokhia">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="dish-title">Molokhia</h5>
+                <span class="dish-price">$11.99</span>
+              </div>
+              <p class="dish-description">A traditional green soup made from jute leaves, garlic, and coriander. Served
+                with rice and chicken or rabbit.</p>
+              <div class="dish-tags mb-3">
+                <span class="tag egyptian"><i class="ri-restaurant-line"></i> Egyptian</span>
+              </div>
+              <div class="mt-auto dish-actions">
+                <a href="dish-details.html?dish=Molokhia" class="btn btn-view">
+                  <i class="ri-eye-line"></i> View Details
+                </a>
+                <button type="button" class="btn btn-order" onclick="openLocationModal('Molokhia')">
+                  <i class="ri-map-pin-user-line"></i> Order Now
+                </button>
+              </div>
+              <small class="dish-note">
+                Share your location via WhatsApp after ordering
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample Dish 3 - Maqluba -->
+        <div class="col" data-categories="Arabic,Spicy">
+          <div class="card h-100 dish-card">
+            <div class="dish-badge bg-danger">Spicy</div>
+            <img
+              src="https://i0.wp.com/eyesclosedcooking.com/wp-content/uploads/2023/01/Egyptian_Molokhia_1.jpg?fit=1024%2C682&ssl=1"
+              class="card-img-top dish-image" alt="Maqluba">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="dish-title">Maqluba</h5>
+                <span class="dish-price">$13.99</span>
+              </div>
+              <p class="dish-description">A famous Arabic dish meaning "upside down"—spiced rice, meat, and vegetables
+                cooked together and flipped for serving.</p>
+              <div class="dish-tags mb-3">
+                <span class="tag arabic"><i class="ri-star-line"></i> Arabic</span>
+              </div>
+              <div class="mt-auto dish-actions">
+                <a href="dish-details.html?dish=Maqluba" class="btn btn-view">
+                  <i class="ri-eye-line"></i> View Details
+                </a>
+                <button type="button" class="btn btn-order" onclick="openLocationModal('Maqluba')">
+                  <i class="ri-map-pin-user-line"></i> Order Now
+                </button>
+              </div>
+              <small class="dish-note">
+                Share your location via WhatsApp after ordering
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample Dish 4 - Ful Medames -->
+        <div class="col" data-categories="Egyptian,Vegetarian,Breakfast">
+          <div class="card h-100 dish-card">
+            <div class="dish-badge bg-primary">Breakfast</div>
+            <img
+              src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80"
+              class="card-img-top dish-image" alt="Ful Medames">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="dish-title">Ful Medames</h5>
+                <span class="dish-price">$6.99</span>
+              </div>
+              <p class="dish-description">Classic Egyptian breakfast of slow-cooked fava beans, olive oil, lemon, and
+                cumin. Served with bread.</p>
+              <div class="dish-tags mb-3">
+                <span class="tag vegetarian"><i class="ri-leaf-line"></i> Vegetarian</span>
+                <span class="tag egyptian"><i class="ri-restaurant-line"></i> Egyptian</span>
+              </div>
+              <div class="mt-auto dish-actions">
+                <a href="dish-details.html?dish=Ful%20Medames" class="btn btn-view">
+                  <i class="ri-eye-line"></i> View Details
+                </a>
+                <button type="button" class="btn btn-order" onclick="openLocationModal('Ful Medames')">
+                  <i class="ri-map-pin-user-line"></i> Order Now
+                </button>
+              </div>
+              <small class="dish-note">
+                Share your location via WhatsApp after ordering
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample Dish 5 - Mansaf -->
+        <div class="col" data-categories="Arabic,Traditional">
+          <div class="card h-100 dish-card">
+            <div class="dish-badge bg-warning">Traditional</div>
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+              class="card-img-top dish-image" alt="Mansaf">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="dish-title">Mansaf</h5>
+                <span class="dish-price">$15.99</span>
+              </div>
+              <p class="dish-description">A Jordanian specialty: lamb cooked in a sauce of fermented dried yogurt and
+                served with rice and almonds.</p>
+              <div class="dish-tags mb-3">
+                <span class="tag arabic"><i class="ri-star-line"></i> Arabic</span>
+              </div>
+              <div class="mt-auto dish-actions">
+                <a href="dish-details.html?dish=Mansaf" class="btn btn-view">
+                  <i class="ri-eye-line"></i> View Details
+                </a>
+                <button type="button" class="btn btn-order" onclick="openLocationModal('Mansaf')">
+                  <i class="ri-map-pin-user-line"></i> Order Now
+                </button>
+              </div>
+              <small class="dish-note">
+                Share your location via WhatsApp after ordering
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample Dish 6 - Kabsa -->
+        <div class="col" data-categories="Arabic,Spicy">
+          <div class="card h-100 dish-card">
+            <div class="dish-badge bg-danger">Spicy</div>
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+              class="card-img-top dish-image" alt="Kabsa">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="dish-title">Kabsa</h5>
+                <span class="dish-price">$14.99</span>
+              </div>
+              <p class="dish-description">A fragrant Saudi rice dish with chicken, vegetables, and a blend of Arabic
+                spices, garnished with nuts and raisins.</p>
+              <div class="dish-tags mb-3">
+                <span class="tag arabic"><i class="ri-star-line"></i> Arabic</span>
+              </div>
+              <div class="mt-auto dish-actions">
+                <a href="dish-details.html?dish=Kabsa" class="btn btn-view">
+                  <i class="ri-eye-line"></i> View Details
+                </a>
+                <button type="button" class="btn btn-order" onclick="openLocationModal('Kabsa')">
+                  <i class="ri-map-pin-user-line"></i> Order Now
+                </button>
+              </div>
+              <small class="dish-note">
+                Share your location via WhatsApp after ordering
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample Dish 7 - Shawarma -->
+        <div class="col" data-categories="Arabic,Grilled">
+          <div class="card h-100 dish-card">
+            <div class="dish-badge bg-danger">Grilled</div>
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+              class="card-img-top dish-image" alt="Shawarma">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="dish-title">Shawarma</h5>
+                <span class="dish-price">$9.99</span>
+              </div>
+              <p class="dish-description">Juicy slices of marinated meat, grilled on a vertical rotisserie, served in
+                pita bread with garlic sauce and pickles.</p>
+              <div class="dish-tags mb-3">
+                <span class="tag arabic"><i class="ri-star-line"></i> Arabic</span>
+              </div>
+              <div class="mt-auto dish-actions">
+                <a href="dish-details.html?dish=Shawarma" class="btn btn-view">
+                  <i class="ri-eye-line"></i> View Details
+                </a>
+                <button type="button" class="btn btn-order" onclick="openLocationModal('Shawarma')">
+                  <i class="ri-map-pin-user-line"></i> Order Now
+                </button>
+              </div>
+              <small class="dish-note">
+                Share your location via WhatsApp after ordering
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample Dish 8 - Fattah -->
+        <div class="col" data-categories="Egyptian,Festive">
+          <div class="card h-100 dish-card">
+            <div class="dish-badge bg-primary">Festive</div>
+            <img
+              src="https://i0.wp.com/eyesclosedcooking.com/wp-content/uploads/2023/01/Egyptian_Molokhia_1.jpg?fit=1024%2C682&ssl=1"
+              class="card-img-top dish-image" alt="Fattah">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="dish-title">Fattah</h5>
+                <span class="dish-price">$12.99</span>
+              </div>
+              <p class="dish-description">A celebratory dish of rice, crispy bread, and meat, layered and topped with
+                garlic tomato sauce and yogurt.</p>
+              <div class="dish-tags mb-3">
+                <span class="tag egyptian"><i class="ri-restaurant-line"></i> Egyptian</span>
+              </div>
+              <div class="mt-auto dish-actions">
+                <a href="dish-details.html?dish=Fattah" class="btn btn-view">
+                  <i class="ri-eye-line"></i> View Details
+                </a>
+                <button type="button" class="btn btn-order" onclick="openLocationModal('Fattah')">
+                  <i class="ri-map-pin-user-line"></i> Order Now
+                </button>
+              </div>
+              <small class="dish-note">
+                Share your location via WhatsApp after ordering
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample Dish 9 - Basbousa -->
+        <div class="col" data-categories="Egyptian,Dessert">
+          <div class="card h-100 dish-card">
+            <div class="dish-badge bg-warning">Dessert</div>
+            <img
+              src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80"
+              class="card-img-top dish-image" alt="Basbousa">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="dish-title">Basbousa</h5>
+                <span class="dish-price">$5.99</span>
+              </div>
+              <p class="dish-description">A sweet, moist semolina cake soaked in syrup, topped with almonds or coconut.
+                A popular Egyptian dessert.</p>
+              <div class="dish-tags mb-3">
+                <span class="tag egyptian"><i class="ri-restaurant-line"></i> Egyptian</span>
+              </div>
+              <div class="mt-auto dish-actions">
+                <a href="dish-details.html?dish=Basbousa" class="btn btn-view">
+                  <i class="ri-eye-line"></i> View Details
+                </a>
+                <button type="button" class="btn btn-order" onclick="openLocationModal('Basbousa')">
+                  <i class="ri-map-pin-user-line"></i> Order Now
+                </button>
+              </div>
+              <small class="dish-note">
+                Share your location via WhatsApp after ordering
+              </small>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </section>
+  <!-- Menu Grid Section End -->
 
-<style>
-  /* Filter Buttons */
-  .btn-filter {
-    border: 2px solid #ff8d2f;
-    color: #ff8d2f;
-    background: white;
-    border-radius: 50px;
-    padding: 8px 20px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-  
-  .btn-filter:hover, .btn-filter.active {
-    background: #ff8d2f;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(255, 141, 47, 0.2);
-  }
-  
-  /* Dish Card */
-  .dish-card {
-    border: none;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
-  }
-  
-  .dish-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  }
-  
-  .dish-image {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .dish-badge {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: #ffc107;
-    color: #333;
-    padding: 5px 10px;
-    border-radius: 50px;
-    font-size: 12px;
-    font-weight: 600;
-    z-index: 1;
-  }
-  
-  .dish-title {
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 0;
-  }
-  
-  .dish-price {
-    color: #ff8d2f;
-    font-weight: 700;
-    font-size: 1.1rem;
-  }
-  
-  .dish-description {
-    color: #666;
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 15px;
-  }
-  
-  .dish-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  
-  .tag {
-    font-size: 12px;
-    padding: 4px 10px;
-    border-radius: 50px;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-  }
-  
-  .tag.vegetarian {
-    background: rgba(40, 167, 69, 0.1);
-    color: #28a745;
-  }
-  
-  .tag.egyptian {
-    background: rgba(23, 162, 184, 0.1);
-    color: #17a2b8;
-  }
-  
-  .dish-actions {
-    display: flex;
-    gap: 10px;
-    margin-top: 15px;
-  }
-  
-  .btn-view {
-    background: #17a2b8;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 8px 15px;
-    flex: 1;
-    transition: all 0.3s;
-  }
-  
-  .btn-view:hover {
-    background: #138496;
-    transform: translateY(-2px);
-  }
-  
-  .btn-order {
-    background: #ff8d2f;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 8px 15px;
-    flex: 1;
-    transition: all 0.3s;
-  }
-  
-  .btn-order:hover {
-    background: #e67300;
-    transform: translateY(-2px);
-  }
-  
-  .dish-note {
-    color: #999;
-    font-size: 12px;
-    margin-top: 15px;
-    text-align: center;
-  }
-</style>
-
-
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-    <!-- Sample Dish 2 - Molokhia -->
-    <div class="col" data-categories="Egyptian,Healthy">
-        <div class="card h-100 dish-card">
-            <div class="dish-badge bg-success">Healthy</div>
-            <img src="https://i0.wp.com/eyesclosedcooking.com/wp-content/uploads/2023/01/Egyptian_Molokhia_1.jpg?fit=1024%2C682&ssl=1" class="card-img-top dish-image" alt="Molokhia">
-            <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                    <h5 class="dish-title">Molokhia</h5>
-                    <span class="dish-price">$11.99</span>
-                </div>
-                <p class="dish-description">A traditional green soup made from jute leaves, garlic, and coriander. Served with rice and chicken or rabbit.</p>
-                <div class="dish-tags mb-3">
-                    <span class="tag egyptian"><i class="ri-restaurant-line"></i> Egyptian</span>
-                </div>
-                <div class="mt-auto dish-actions">
-                    <a href="dish-details.html?dish=Molokhia" class="btn btn-view">
-                        <i class="ri-eye-line"></i> View Details
+  <!-- FOOTER INCLUDE END -->
+  <footer class="footer-section section-t-space"
+    style="background-color: #35393cff; padding: 40px 0; font-family: Arial, sans-serif;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
+      <div class="main-footer">
+        <div class="row g-3" style="display: flex; flex-wrap: wrap; margin: 0 -15px;">
+          <div class="col-xl-12" style="flex: 0 0 100%; max-width: 100%; padding: 0 15px;">
+            <div class="footer-logo-part" style="text-align: center; margin-bottom: 30px;">
+              <img class="img-fluid logo" src="assets/images/svg/logo.png"
+                style="width: 150px; height: 150px; margin: 0 auto 20px; display: block;" alt="logo" />
+              <p style="max-width: 600px; margin: 0 auto 25px; line-height: 1.6; color: #ffffff; font-size: 16px;">
+                Welcome to our online order website! Here, you can browse our
+                wide selection of products and place orders from the comfort
+                of your own home.
+              </p>
+              <div class="social-media-part">
+                <ul class="social-icon"
+                  style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 15px;">
+                  <li>
+                    <a href="https://www.facebook.com/login/" style="color: #4267B2; font-size: 24px;">
+                      <i class="ri-facebook-fill icon"></i>
                     </a>
-                    <button type="button" class="btn btn-order" onclick="openLocationModal('Molokhia')">
-                        <i class="ri-map-pin-user-line"></i> Order Now
-                    </button>
-                </div>
-                <small class="dish-note">
-                    Share your location via WhatsApp after ordering
-                </small>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sample Dish 3 - Maqluba -->
-    <div class="col" data-categories="Arabic,Spicy">
-        <div class="card h-100 dish-card">
-            <div class="dish-badge bg-danger">Spicy</div>
-            <img src="https://i0.wp.com/eyesclosedcooking.com/wp-content/uploads/2023/01/Egyptian_Molokhia_1.jpg?fit=1024%2C682&ssl=1" class="card-img-top dish-image" alt="Maqluba">
-            <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                    <h5 class="dish-title">Maqluba</h5>
-                    <span class="dish-price">$13.99</span>
-                </div>
-                <p class="dish-description">A famous Arabic dish meaning "upside down"—spiced rice, meat, and vegetables cooked together and flipped for serving.</p>
-                <div class="dish-tags mb-3">
-                    <span class="tag arabic"><i class="ri-star-line"></i> Arabic</span>
-                </div>
-                <div class="mt-auto dish-actions">
-                    <a href="dish-details.html?dish=Maqluba" class="btn btn-view">
-                        <i class="ri-eye-line"></i> View Details
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/i/flow/login" style="color: #1DA1F2; font-size: 24px;">
+                      <i class="ri-twitter-fill icon"></i>
                     </a>
-                    <button type="button" class="btn btn-order" onclick="openLocationModal('Maqluba')">
-                        <i class="ri-map-pin-user-line"></i> Order Now
-                    </button>
-                </div>
-                <small class="dish-note">
-                    Share your location via WhatsApp after ordering
-                </small>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sample Dish 4 - Ful Medames -->
-    <div class="col" data-categories="Egyptian,Vegetarian,Breakfast">
-        <div class="card h-100 dish-card">
-            <div class="dish-badge bg-primary">Breakfast</div>
-            <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80" class="card-img-top dish-image" alt="Ful Medames">
-            <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                    <h5 class="dish-title">Ful Medames</h5>
-                    <span class="dish-price">$6.99</span>
-                </div>
-                <p class="dish-description">Classic Egyptian breakfast of slow-cooked fava beans, olive oil, lemon, and cumin. Served with bread.</p>
-                <div class="dish-tags mb-3">
-                    <span class="tag vegetarian"><i class="ri-leaf-line"></i> Vegetarian</span>
-                    <span class="tag egyptian"><i class="ri-restaurant-line"></i> Egyptian</span>
-                </div>
-                <div class="mt-auto dish-actions">
-                    <a href="dish-details.html?dish=Ful%20Medames" class="btn btn-view">
-                        <i class="ri-eye-line"></i> View Details
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/login/" style="color: #0077b5; font-size: 24px;">
+                      <i class="ri-linkedin-fill icon"></i>
                     </a>
-                    <button type="button" class="btn btn-order" onclick="openLocationModal('Ful Medames')">
-                        <i class="ri-map-pin-user-line"></i> Order Now
-                    </button>
-                </div>
-                <small class="dish-note">
-                    Share your location via WhatsApp after ordering
-                </small>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sample Dish 5 - Mansaf -->
-    <div class="col" data-categories="Arabic,Traditional">
-        <div class="card h-100 dish-card">
-            <div class="dish-badge bg-warning">Traditional</div>
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" class="card-img-top dish-image" alt="Mansaf">
-            <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                    <h5 class="dish-title">Mansaf</h5>
-                    <span class="dish-price">$15.99</span>
-                </div>
-                <p class="dish-description">A Jordanian specialty: lamb cooked in a sauce of fermented dried yogurt and served with rice and almonds.</p>
-                <div class="dish-tags mb-3">
-                    <span class="tag arabic"><i class="ri-star-line"></i> Arabic</span>
-                </div>
-                <div class="mt-auto dish-actions">
-                    <a href="dish-details.html?dish=Mansaf" class="btn btn-view">
-                        <i class="ri-eye-line"></i> View Details
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/accounts/login/" style="color: #E1306C; font-size: 24px;">
+                      <i class="ri-instagram-fill icon"></i>
                     </a>
-                    <button type="button" class="btn btn-order" onclick="openLocationModal('Mansaf')">
-                        <i class="ri-map-pin-user-line"></i> Order Now
-                    </button>
-                </div>
-                <small class="dish-note">
-                    Share your location via WhatsApp after ordering
-                </small>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sample Dish 6 - Kabsa -->
-    <div class="col" data-categories="Arabic,Spicy">
-        <div class="card h-100 dish-card">
-            <div class="dish-badge bg-danger">Spicy</div>
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" class="card-img-top dish-image" alt="Kabsa">
-            <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                    <h5 class="dish-title">Kabsa</h5>
-                    <span class="dish-price">$14.99</span>
-                </div>
-                <p class="dish-description">A fragrant Saudi rice dish with chicken, vegetables, and a blend of Arabic spices, garnished with nuts and raisins.</p>
-                <div class="dish-tags mb-3">
-                    <span class="tag arabic"><i class="ri-star-line"></i> Arabic</span>
-                </div>
-                <div class="mt-auto dish-actions">
-                    <a href="dish-details.html?dish=Kabsa" class="btn btn-view">
-                        <i class="ri-eye-line"></i> View Details
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/" style="color: #FF0000; font-size: 24px;">
+                      <i class="ri-youtube-fill icon"></i>
                     </a>
-                    <button type="button" class="btn btn-order" onclick="openLocationModal('Kabsa')">
-                        <i class="ri-map-pin-user-line"></i> Order Now
-                    </button>
-                </div>
-                <small class="dish-note">
-                    Share your location via WhatsApp after ordering
-                </small>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sample Dish 7 - Shawarma -->
-    <div class="col" data-categories="Arabic,Grilled">
-        <div class="card h-100 dish-card">
-            <div class="dish-badge bg-danger">Grilled</div>
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" class="card-img-top dish-image" alt="Shawarma">
-            <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                    <h5 class="dish-title">Shawarma</h5>
-                    <span class="dish-price">$9.99</span>
-                </div>
-                <p class="dish-description">Juicy slices of marinated meat, grilled on a vertical rotisserie, served in pita bread with garlic sauce and pickles.</p>
-                <div class="dish-tags mb-3">
-                    <span class="tag arabic"><i class="ri-star-line"></i> Arabic</span>
-                </div>
-                <div class="mt-auto dish-actions">
-                    <a href="dish-details.html?dish=Shawarma" class="btn btn-view">
-                        <i class="ri-eye-line"></i> View Details
-                    </a>
-                    <button type="button" class="btn btn-order" onclick="openLocationModal('Shawarma')">
-                        <i class="ri-map-pin-user-line"></i> Order Now
-                    </button>
-                </div>
-                <small class="dish-note">
-                    Share your location via WhatsApp after ordering
-                </small>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sample Dish 8 - Fattah -->
-    <div class="col" data-categories="Egyptian,Festive">
-        <div class="card h-100 dish-card">
-            <div class="dish-badge bg-primary">Festive</div>
-            <img src="https://i0.wp.com/eyesclosedcooking.com/wp-content/uploads/2023/01/Egyptian_Molokhia_1.jpg?fit=1024%2C682&ssl=1" class="card-img-top dish-image" alt="Fattah">
-            <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                    <h5 class="dish-title">Fattah</h5>
-                    <span class="dish-price">$12.99</span>
-                </div>
-                <p class="dish-description">A celebratory dish of rice, crispy bread, and meat, layered and topped with garlic tomato sauce and yogurt.</p>
-                <div class="dish-tags mb-3">
-                    <span class="tag egyptian"><i class="ri-restaurant-line"></i> Egyptian</span>
-                </div>
-                <div class="mt-auto dish-actions">
-                    <a href="dish-details.html?dish=Fattah" class="btn btn-view">
-                        <i class="ri-eye-line"></i> View Details
-                    </a>
-                    <button type="button" class="btn btn-order" onclick="openLocationModal('Fattah')">
-                        <i class="ri-map-pin-user-line"></i> Order Now
-                    </button>
-                </div>
-                <small class="dish-note">
-                    Share your location via WhatsApp after ordering
-                </small>
-            </div>
-        </div>
-    </div>
-
-    <!-- Sample Dish 9 - Basbousa -->
-    <div class="col" data-categories="Egyptian,Dessert">
-        <div class="card h-100 dish-card">
-            <div class="dish-badge bg-warning">Dessert</div>
-            <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=600&q=80" class="card-img-top dish-image" alt="Basbousa">
-            <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                    <h5 class="dish-title">Basbousa</h5>
-                    <span class="dish-price">$5.99</span>
-                </div>
-                <p class="dish-description">A sweet, moist semolina cake soaked in syrup, topped with almonds or coconut. A popular Egyptian dessert.</p>
-                <div class="dish-tags mb-3">
-                    <span class="tag egyptian"><i class="ri-restaurant-line"></i> Egyptian</span>
-                </div>
-                <div class="mt-auto dish-actions">
-                    <a href="dish-details.html?dish=Basbousa" class="btn btn-view">
-                        <i class="ri-eye-line"></i> View Details
-                    </a>
-                    <button type="button" class="btn btn-order" onclick="openLocationModal('Basbousa')">
-                        <i class="ri-map-pin-user-line"></i> Order Now
-                    </button>
-                </div>
-                <small class="dish-note">
-                    Share your location via WhatsApp after ordering
-                </small>
-            </div>
-        </div>
-    </div>
-</div>
-
-<style>
-    /* Dish Card Styles */
-    .dish-card {
-        border: none;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        transition: all 0.3s ease;
-        background: white;
-    }
-    
-    .dish-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
-    
-    .dish-image {
-        height: 200px;
-        object-fit: cover;
-        width: 100%;
-    }
-    
-    .dish-badge {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        padding: 5px 12px;
-        border-radius: 50px;
-        font-size: 12px;
-        font-weight: 600;
-        color: white;
-        z-index: 1;
-    }
-    
-    .dish-title {
-        font-weight: 600;
-        color: #333;
-        margin-bottom: 0;
-        font-size: 1.1rem;
-    }
-    
-    .dish-price {
-        color: #ff8d2f;
-        font-weight: 700;
-        font-size: 1.1rem;
-    }
-    
-    .dish-description {
-        color: #666;
-        font-size: 14px;
-        line-height: 1.5;
-        margin-bottom: 15px;
-    }
-    
-    .dish-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-    
-    .tag {
-        font-size: 12px;
-        padding: 4px 10px;
-        border-radius: 50px;
-        display: inline-flex;
-        align-items: center;
-        gap: 4px;
-    }
-    
-    .tag.vegetarian {
-        background: rgba(40, 167, 69, 0.1);
-        color: #28a745;
-    }
-    
-    .tag.egyptian {
-        background: rgba(23, 162, 184, 0.1);
-        color: #17a2b8;
-    }
-    
-    .tag.arabic {
-        background: rgba(255, 193, 7, 0.1);
-        color: #ffc107;
-    }
-    
-    .dish-actions {
-        display: flex;
-        gap: 10px;
-        margin-top: 15px;
-    }
-    
-    .btn-view {
-        background: #17a2b8;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        padding: 8px 15px;
-        flex: 1;
-        transition: all 0.3s;
-        font-size: 14px;
-    }
-    
-    .btn-view:hover {
-        background: #138496;
-        transform: translateY(-2px);
-    }
-    
-    .btn-order {
-        background: #ff8d2f;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        padding: 8px 15px;
-        flex: 1;
-        transition: all 0.3s;
-        font-size: 14px;
-    }
-    
-    .btn-order:hover {
-        background: #e67300;
-        transform: translateY(-2px);
-    }
-    
-    .dish-note {
-        color: #999;
-        font-size: 12px;
-        margin-top: 15px;
-        text-align: center;
-    }
-</style>
-
-
-        </div>
-    </div>
-</section>
-<!-- Menu Grid Section End -->
-
-<!-- FOOTER INCLUDE END -->
-    <footer class="footer-section section-t-space" style="background-color: #35393cff; padding: 40px 0; font-family: Arial, sans-serif;">
-      <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
-        <div class="main-footer">
-          <div class="row g-3" style="display: flex; flex-wrap: wrap; margin: 0 -15px;">
-            <div class="col-xl-12" style="flex: 0 0 100%; max-width: 100%; padding: 0 15px;">
-              <div class="footer-logo-part" style="text-align: center; margin-bottom: 30px;">
-                <img
-                  class="img-fluid logo"
-                  src="assets/images/svg/logo.png"
-                  style="width: 150px; height: 150px; margin: 0 auto 20px; display: block;"
-                  alt="logo"
-                />
-                <p style="max-width: 600px; margin: 0 auto 25px; line-height: 1.6; color: #ffffff; font-size: 16px;">
-                  Welcome to our online order website! Here, you can browse our
-                  wide selection of products and place orders from the comfort
-                  of your own home.
-                </p>
-                <div class="social-media-part">
-                  <ul class="social-icon" style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 15px;">
-                    <li>
-                      <a href="https://www.facebook.com/login/" style="color: #4267B2; font-size: 24px;">
-                        <i class="ri-facebook-fill icon"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/i/flow/login" style="color: #1DA1F2; font-size: 24px;">
-                        <i class="ri-twitter-fill icon"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/login/" style="color: #0077b5; font-size: 24px;">
-                        <i class="ri-linkedin-fill icon"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/accounts/login/" style="color: #E1306C; font-size: 24px;">
-                        <i class="ri-instagram-fill icon"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://www.youtube.com/" style="color: #FF0000; font-size: 24px;">
-                        <i class="ri-youtube-fill icon"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="bottom-footer-part" style="border-top: 1px solid #ddd; padding-top: 20px; margin-top: 30px;">
-          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
-            <h6 style="margin: 0; color: #ffffff; font-size: 14px;">@ Copyright 2025 Angie's Kitchen . All rights Reserved.</h6>
-            <img
-              class="img-fluid cards"
-              src="assets/images/icons/footer-card.png"
-              alt="card"
-              style="max-height: 30px;"
-            />
+      </div>
+      <div class="bottom-footer-part" style="border-top: 1px solid #ddd; padding-top: 20px; margin-top: 30px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
+          <h6 style="margin: 0; color: #ffffff; font-size: 14px;">@ Copyright 2025 Angie's Kitchen . All rights
+            Reserved.</h6>
+          <img class="img-fluid cards" src="assets/images/icons/footer-card.png" alt="card" style="max-height: 30px;" />
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+
+  <!-- cart fix panel -->
+
+  <!-- location offcanvas start -->
+  <div class="modal fade location-modal" id="location" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">
+            <h5 class="fw-semibold">Select a Location</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
         </div>
-      </div>
-    </footer>
-    <!-- footer section end -->
-
-   
-    <!-- cart fix panel -->
-
-    <!-- location offcanvas start -->
-    <div class="modal fade location-modal" id="location" data-bs-backdrop="static" data-bs-keyboard="false"
-        tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="modal-title">
-                        <h5 class="fw-semibold">Select a Location</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                </div>
-                <div class="modal-body">
-                    <div class="search-section">
-                        <form class="form_search" role="form">
-                            <input type="search" placeholder="Search Location" class="nav-search nav-search-field">
-                        </form>
-                    </div>
-                    <a href="#!" class="current-location">
-                        <div class="current-address">
-                            <i class="ri-focus-3-line focus"></i>
-                            <div>
-                                <h5>Use current-location</h5>
-                                <h6>Wellington St., Ottawa, Ontario, Canada</h6>
-                            </div>
-                        </div>
-                        <i class="ri-arrow-right-s-line arrow"></i>
-                    </a>
-                    <h5 class="mt-sm-3 mt-2 fw-medium recent-title dark-text">
-                        Recent Location
-                    </h5>
-                    <a href="#!" class="recent-location">
-                        <div class="recant-address">
-                            <i class="ri-map-pin-line theme-color"></i>
-                            <div>
-                                <h5>Bayshore</h5>
-                                <h6>kingston St., Ottawa, Ontario, Canada</h6>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn gray-btn" data-bs-dismiss="modal">Close</a>
-                    <a href="#" class="btn theme-btn mt-0" data-bs-dismiss="modal">Save</a>
-                </div>
+        <div class="modal-body">
+          <div class="search-section">
+            <form class="form_search" role="form">
+              <input type="search" placeholder="Search Location" class="nav-search nav-search-field">
+            </form>
+          </div>
+          <a href="#!" class="current-location">
+            <div class="current-address">
+              <i class="ri-focus-3-line focus"></i>
+              <div>
+                <h5>Use current-location</h5>
+                <h6>Wellington St., Ottawa, Ontario, Canada</h6>
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- location offcanvas end -->
-
-    <!-- customized modal starts -->
-    <div class="modal customized-modal" id="customized" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="filter-header">
-                        <h5 class="title">Custom Food</h5>
-                        <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
-                    </div>
-                    <div class="filter-body">
-                        <div class="filter-title">
-                            <h5 class="fw-medium dark-text">Choose Size</h5>
-                        </div>
-                        <ul class="filter-list">
-                            <li>
-                                <h6 class="product-size">Size S</h6>
-                                <div class="form-check product-price">
-                                    <label class="form-check-label" for="reverseCheck1">$18</label>
-                                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
-                                </div>
-                            </li>
-                            <li>
-                                <h6 class="product-size">Size M</h6>
-                                <div class="form-check product-price">
-                                    <label class="form-check-label" for="reverseCheck1">$20</label>
-                                    <input class="form-check-input" type="checkbox" id="reverseCheck2" checked>
-                                </div>
-                            </li>
-                            <li>
-                                <h6 class="product-size">Size L</h6>
-                                <div class="form-check product-price">
-                                    <label class="form-check-label" for="reverseCheck1">$22</label>
-                                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck3">
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="filter-title">
-                            <h5 class="fw-medium dark-text">Choose Size</h5>
-                        </div>
-                        <ul class="filter-list border-0">
-                            <li>
-                                <h6 class="product-size">Chili sauce</h6>
-                                <div class="form-check product-price">
-                                    <label class="form-check-label" for="reverseCheck1">$18</label>
-                                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck4">
-                                </div>
-                            </li>
-                            <li>
-                                <h6 class="product-size">Mustard</h6>
-                                <div class="form-check product-price">
-                                    <label class="form-check-label" for="reverseCheck1">$20</label>
-                                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck5" checked>
-                                </div>
-                            </li>
-                            <li>
-                                <h6 class="product-size">Special dipping sauce</h6>
-                                <div class="form-check product-price">
-                                    <label class="form-check-label" for="reverseCheck1">$22</label>
-                                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck6">
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="filter-footer">
-                        <a href="#" class="btn theme-btn add-btn w-100 mt-0" data-bs-dismiss="modal">Apply</a>
-                    </div>
-                </div>
+            <i class="ri-arrow-right-s-line arrow"></i>
+          </a>
+          <h5 class="mt-sm-3 mt-2 fw-medium recent-title dark-text">
+            Recent Location
+          </h5>
+          <a href="#!" class="recent-location">
+            <div class="recant-address">
+              <i class="ri-map-pin-line theme-color"></i>
+              <div>
+                <h5>Bayshore</h5>
+                <h6>kingston St., Ottawa, Ontario, Canada</h6>
+              </div>
             </div>
+          </a>
         </div>
-    </div>
-    <!-- customized modal end -->
-
-    <!-- toast starts -->
-    <div class="toast-container position-fixed top-0 end-0 p-3">
-        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="d-flex bg-theme text-white">
-                <div class="toast-body">Restaurant URL Copied to Clipboard</div>
-                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
-            </div>
+        <div class="modal-footer">
+          <a href="#" class="btn gray-btn" data-bs-dismiss="modal">Close</a>
+          <a href="#" class="btn theme-btn mt-0" data-bs-dismiss="modal">Save</a>
         </div>
-    </div>
-    <!-- toast end -->
-
-    <!-- Bg Overlay Start -->
-    <div class="bg-overlay" id="overlay"></div>
-    <!-- Bg Overlay end -->
-
-    <!-- theme btn start -->
-    <div class="theme-btns">
-        <button type="button" class="btntheme mode-change-button">
-            <i id="themeIcon" class="ri-moon-line icon mode-icon"></i>
-            <span class="text-value">Dark</span>
-        </button>
-    </div>
-    <!-- theme btn end -->
-
-    <!-- tap to top start -->
-    <button class="scroll scroll-to-top menu-page">
-        <i class="ri-arrow-up-s-line arrow"></i>
-    </button>
-    <!-- tap to top end -->
-
-    <!-- bootstrap js -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-    <!-- swiper js -->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/custom-swiper.js"></script>
-
-    <!-- footer accordion js -->
-    <script src="assets/js/footer-accordion.js"></script>
-
-    <!-- menu button js -->
-    <script src="assets/js/menu-button.js"></script>
-
-    <!-- fancybox js -->
-    <script src="assets/js/fancybox.js"></script>
-
-    <!-- toast js -->
-    <script src="assets/js/toast.js"></script>
-
-    <!-- script js -->
-    <script src="assets/js/script.js"></script>
-<!-- Location Order Modal -->
-<div class="modal fade" id="locationOrderModal" tabindex="-1" aria-labelledby="locationOrderModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="locationOrderModalLabel">Share Your Location &amp; Order</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div id="location-status" class="mb-3">To send your exact location with your order, please allow location access.</div>
-        <div id="location-link" class="mb-2"></div>
-        <div id="wa-order-btn"></div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</div>
+  <!-- location offcanvas end -->
 
+  <!-- customized modal starts -->
+  <div class="modal customized-modal" id="customized" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="container">
+          <div class="filter-header">
+            <h5 class="title">Custom Food</h5>
+            <a href="#" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></a>
+          </div>
+          <div class="filter-body">
+            <div class="filter-title">
+              <h5 class="fw-medium dark-text">Choose Size</h5>
+            </div>
+            <ul class="filter-list">
+              <li>
+                <h6 class="product-size">Size S</h6>
+                <div class="form-check product-price">
+                  <label class="form-check-label" for="reverseCheck1">$18</label>
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
+                </div>
+              </li>
+              <li>
+                <h6 class="product-size">Size M</h6>
+                <div class="form-check product-price">
+                  <label class="form-check-label" for="reverseCheck1">$20</label>
+                  <input class="form-check-input" type="checkbox" id="reverseCheck2" checked>
+                </div>
+              </li>
+              <li>
+                <h6 class="product-size">Size L</h6>
+                <div class="form-check product-price">
+                  <label class="form-check-label" for="reverseCheck1">$22</label>
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck3">
+                </div>
+              </li>
+            </ul>
+            <div class="filter-title">
+              <h5 class="fw-medium dark-text">Choose Size</h5>
+            </div>
+            <ul class="filter-list border-0">
+              <li>
+                <h6 class="product-size">Chili sauce</h6>
+                <div class="form-check product-price">
+                  <label class="form-check-label" for="reverseCheck1">$18</label>
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck4">
+                </div>
+              </li>
+              <li>
+                <h6 class="product-size">Mustard</h6>
+                <div class="form-check product-price">
+                  <label class="form-check-label" for="reverseCheck1">$20</label>
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck5" checked>
+                </div>
+              </li>
+              <li>
+                <h6 class="product-size">Special dipping sauce</h6>
+                <div class="form-check product-price">
+                  <label class="form-check-label" for="reverseCheck1">$22</label>
+                  <input class="form-check-input" type="checkbox" value="" id="reverseCheck6">
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="filter-footer">
+            <a href="#" class="btn theme-btn add-btn w-100 mt-0" data-bs-dismiss="modal">Apply</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- customized modal end -->
 
+  <!-- toast starts -->
+  <div class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex bg-theme text-white">
+        <div class="toast-body">Restaurant URL Copied to Clipboard</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+  </div>
+  <!-- toast end -->
 
+  <!-- Bg Overlay Start -->
+  <div class="bg-overlay" id="overlay"></div>
+  <!-- Bg Overlay end -->
 
+  <!-- theme btn start -->
+  <div class="theme-btns">
+    <button type="button" class="btntheme mode-change-button">
+      <i id="themeIcon" class="ri-moon-line icon mode-icon"></i>
+      <span class="text-value">Dark</span>
+    </button>
+  </div>
+  <!-- theme btn end -->
 
-<style>
-    .menu-grid-section .card {
-        border-radius: 16px;
-        border: none;
-        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-        transition: transform 0.2s;
-        background: #fff7f0;
-    }
-    .menu-grid-section .card:hover {
-        transform: translateY(-6px) scale(1.02);
-        box-shadow: 0 8px 32px rgba(255, 140, 0, 0.13);
-    }
-    .menu-grid-section .card-img-top {
-        border-radius: 16px 16px 0 0;
-        height: 180px;
-        object-fit: cover;
-        background: #ffe3c1;
-    }
-    .menu-grid-section .badge {
-        font-size: 0.85em;
-        margin-right: 0.3em;
-    }
-    .menu-grid-section .btn-menu {
-        background: #ff8d2f;
-        color: #fff;
-        border: none;
-        border-radius: 24px;
-        padding: 0.5em 1.5em;
-        font-weight: 600;
-        transition: background 0.2s;
-    }
-    .menu-grid-section .btn-menu:hover {
-        background: #e76f00;
-        color: #fff;
-    }
-    .menu-grid-section .btn-details {
-        background: #fff;
-        color: #ff8d2f;
-        border: 2px solid #ff8d2f;
-        border-radius: 24px;
-        padding: 0.5em 1.5em;
-        font-weight: 600;
-        transition: background 0.2s, color 0.2s;
-    }
-    .menu-grid-section .btn-details:hover {
-        background: #ff8d2f;
-        color: #fff;
-    }
-    .menu-grid-section .icon {
-        font-size: 1.25em;
-        margin-right: 0.3em;
-        vertical-align: middle;
-    }
-</style>
-<style>
-/* Light/Dark mode fixes for navbar */
-body.light-mode .navbar, .navbar.bg-light {
-  background: #fff !important;
-  color: #222;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-}
-body.light-mode .navbar .nav-link, .navbar.bg-light .nav-link {
-  color: #222 !important;
-}
-body.dark-mode .navbar, .navbar.bg-dark {
-  background: #222 !important;
-  color: #fff;
-}
-body.dark-mode .navbar .nav-link, .navbar.bg-dark .nav-link {
-  color: #fff !important;
-}
+  <!-- tap to top start -->
+  <button class="scroll scroll-to-top menu-page">
+    <i class="ri-arrow-up-s-line arrow"></i>
+  </button>
+  <!-- tap to top end -->
 
-/* Card and button fixes */
-.menu-grid-section .card {
-  background: var(--bs-card-bg, #fff);
-  border-radius: 1rem;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
-  transition: box-shadow 0.2s;
-}
-.menu-grid-section .card-body {
-  background: transparent;
-}
-.menu-grid-section .btn-menu {
-  font-size: 1em;
-  padding: 0.4em 1em;
-  border-radius: 2em;
-  margin-top: 0.5em;
-}
-.menu-grid-section .btn-menu.btn-sm {
-  font-size: 0.95em;
-  padding: 0.35em 0.8em;
-}
+  <!-- Location Order Modal -->
+  <div class="modal fade" id="locationOrderModal" tabindex="-1" aria-labelledby="locationOrderModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="locationOrderModalLabel">Share Your Location &amp; Order</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="location-status" class="mb-3">To send your exact location with your order, please allow location
+            access.</div>
+          <div id="location-link" class="mb-2"></div>
+          <div id="wa-order-btn"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-/* Filter bar */
-#category-filters .btn {
-  min-width: 90px;
-  border-radius: 2em;
-}
-#category-filters .btn.active, #category-filters .btn:active {
-  background: #ff8d2f;
-  color: #fff;
-  border-color: #ff8d2f;
-}
+  <!-- bootstrap js -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-/* Responsive card grid */
-@media (max-width: 575.98px) {
-  .menu-grid-section .card {
-    margin-bottom: 1.2rem;
-  }
-  .menu-grid-section .btn-menu {
-    width: 100%;
-    margin-top: 0.7em;
-  }
-}
-</style>
+  <!-- swiper js -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/custom-swiper.js"></script>
 
+  <!-- footer accordion js -->
+  <script src="assets/js/footer-accordion.js"></script>
 
-<script>
-// Live filtering for menu grid
-const filterBtns = document.querySelectorAll('#category-filters .btn');
-filterBtns.forEach(btn => btn.addEventListener('click', function() {
-  filterBtns.forEach(b => b.classList.remove('active'));
-  this.classList.add('active');
-  const filter = this.dataset.filter;
-  document.querySelectorAll('.menu-grid-section .card-body').forEach(card => {
-    const cats = card.dataset.categories ? card.dataset.categories.split(',') : [];
-    const show = (filter === 'all') || cats.includes(filter);
-    card.parentElement.parentElement.style.display = show ? '' : 'none';
-  });
-}));
-</script>
+  <!-- menu button js -->
+  <script src="assets/js/menu-button.js"></script>
 
+  <!-- fancybox js -->
+  <script src="assets/js/fancybox.js"></script>
 
+  <!-- toast js -->
+  <script src="assets/js/toast.js"></script>
 
+  <!-- script js -->
+  <script src="assets/js/script.js"></script>
 
+  <script>
+    // Live filtering for menu grid
+    const filterBtns = document.querySelectorAll('#category-filters .btn');
+    filterBtns.forEach(btn => btn.addEventListener('click', function () {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      const filter = this.dataset.filter;
+      document.querySelectorAll('.menu-grid-section .card-body').forEach(card => {
+        const cats = card.dataset.categories ? card.dataset.categories.split(',') : [];
+        const show = (filter === 'all') || cats.includes(filter);
+        card.parentElement.parentElement.style.display = show ? '' : 'none';
+      });
+    }));
 
-
-<script>
-let currentMealName = '';
-function openLocationModal(mealName) {
-    currentMealName = mealName;
-    document.getElementById('location-status').innerHTML = 'To send your exact location with your order, please allow location access.';
-    document.getElementById('location-link').innerHTML = '';
-    document.getElementById('wa-order-btn').innerHTML = '';
-    var modal = new bootstrap.Modal(document.getElementById('locationOrderModal'));
-    modal.show();
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-            const lat = position.coords.latitude;
-            const lng = position.coords.longitude;
-            const gmapsLink = `https://maps.google.com/?q=${lat},${lng}`;
-            document.getElementById('location-status').innerHTML = '<span class="text-success">Location found!</span>';
-            document.getElementById('location-link').innerHTML = `Google Maps: <a href="${gmapsLink}" target="_blank">${lat.toFixed(5)}, ${lng.toFixed(5)}</a>`;
-            // WhatsApp message
-            const waMsg = encodeURIComponent(`I'd like to order this meal (${currentMealName}) and I came through the website. Angie's Kitchen. My location: ${gmapsLink}`);
-            const waLink = `https://wa.me/+13122312021?text=${waMsg}`;
-            document.getElementById('wa-order-btn').innerHTML = `<a href="${waLink}" target="_blank" class="btn btn-menu w-100 mt-3"><i class='ri-whatsapp-line icon'></i>Send on WhatsApp</a>`;
-        }, function(error) {
-            document.getElementById('location-status').innerHTML = '<span class="text-danger">Could not get your location. Please check browser permissions and try again.</span>';
+    let currentMealName = '';
+    function openLocationModal(mealName) {
+      currentMealName = mealName;
+      document.getElementById('location-status').innerHTML = 'To send your exact location with your order, please allow location access.';
+      document.getElementById('location-link').innerHTML = '';
+      document.getElementById('wa-order-btn').innerHTML = '';
+      var modal = new bootstrap.Modal(document.getElementById('locationOrderModal'));
+      modal.show();
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function (position) {
+          const lat = position.coords.latitude;
+          const lng = position.coords.longitude;
+          const gmapsLink = `https://maps.google.com/?q=${lat},${lng}`;
+          document.getElementById('location-status').innerHTML = '<span class="text-success">Location found!</span>';
+          document.getElementById('location-link').innerHTML = `Google Maps: <a href="${gmapsLink}" target="_blank">${lat.toFixed(5)}, ${lng.toFixed(5)}</a>`;
+          // WhatsApp message
+          const waMsg = encodeURIComponent(`I'd like to order this meal (${currentMealName}) and I came through the website. Angie's Kitchen. My location: ${gmapsLink}`);
+          const waLink = `https://wa.me/+13122312021?text=${waMsg}`;
+          document.getElementById('wa-order-btn').innerHTML = `<a href="${waLink}" target="_blank" class="btn btn-menu w-100 mt-3"><i class='ri-whatsapp-line icon'></i>Send on WhatsApp</a>`;
+        }, function (error) {
+          document.getElementById('location-status').innerHTML = '<span class="text-danger">Could not get your location. Please check browser permissions and try again.</span>';
         });
-    } else {
+      } else {
         document.getElementById('location-status').innerHTML = '<span class="text-danger">Geolocation is not supported by your browser.</span>';
+      }
     }
-}
-</script>
-<script>
-// Dynamically load navbar.html for DRY frontend includes
-fetch('navbar.html')
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById('navbar-placeholder').innerHTML = data;
-    // Re-initialize Bootstrap dropdowns for dynamically loaded navbar
-    var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
-    dropdownElementList.map(function (dropdownToggleEl) {
-      return new bootstrap.Dropdown(dropdownToggleEl);
-    });
-    // Workaround for dropdowns in offcanvas on mobile
-    document.querySelectorAll('.offcanvas .dropdown-toggle').forEach(function (dropdown) {
-      dropdown.addEventListener('click', function (e) {
-        e.stopPropagation();
-        let menu = this.nextElementSibling;
-        if (menu && menu.classList.contains('dropdown-menu')) {
-          menu.classList.toggle('show');
-        }
+
+    // Dynamically load navbar.html for DRY frontend includes
+    fetch('navbar.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+        // Re-initialize Bootstrap dropdowns for dynamically loaded navbar
+        var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
+        dropdownElementList.map(function (dropdownToggleEl) {
+          return new bootstrap.Dropdown(dropdownToggleEl);
+        });
+        // Workaround for dropdowns in offcanvas on mobile
+        document.querySelectorAll('.offcanvas .dropdown-toggle').forEach(function (dropdown) {
+          dropdown.addEventListener('click', function (e) {
+            e.stopPropagation();
+            let menu = this.nextElementSibling;
+            if (menu && menu.classList.contains('dropdown-menu')) {
+              menu.classList.toggle('show');
+            }
+          });
+        });
+      });
+
+    // Filter functionality
+    document.querySelectorAll('.btn-filter').forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        document.querySelectorAll('.btn-filter').forEach(btn => {
+          btn.classList.remove('active');
+        });
+
+        // Add active class to clicked button
+        button.classList.add('active');
+
+        const filter = button.dataset.filter;
+        const dishes = document.querySelectorAll('.col[data-categories]');
+
+        dishes.forEach(dish => {
+          if (filter === 'all' || dish.dataset.categories.includes(filter)) {
+            dish.style.display = 'block';
+          } else {
+            dish.style.display = 'none';
+          }
+        });
       });
     });
-  });
-</script>
 
-
-
-<script>
-  // Filter functionality
-  document.querySelectorAll('.btn-filter').forEach(button => {
-    button.addEventListener('click', () => {
-      // Remove active class from all buttons
-      document.querySelectorAll('.btn-filter').forEach(btn => {
-        btn.classList.remove('active');
-      });
-      
-      // Add active class to clicked button
-      button.classList.add('active');
-      
-      const filter = button.dataset.filter;
-      const dishes = document.querySelectorAll('.col[data-categories]');
-      
-      dishes.forEach(dish => {
-        if (filter === 'all' || dish.dataset.categories.includes(filter)) {
-          dish.style.display = 'block';
-        } else {
-          dish.style.display = 'none';
-        }
-      });
+    document.getElementById('reservationForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      // You can replace this with AJAX or backend integration later
+      alert('Reservation submitted! We will contact you soon.');
+      var modal = bootstrap.Modal.getInstance(document.getElementById('reservationModal'));
+      modal.hide();
     });
-  });
-</script>
-
-
-
-
-<script>
-document.getElementById('reservationForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  // You can replace this with AJAX or backend integration later
-  alert('Reservation submitted! We will contact you soon.');
-  var modal = bootstrap.Modal.getInstance(document.getElementById('reservationModal'));
-  modal.hide();
-});
-</script>
+  </script>
 </body>
 
 </html>
