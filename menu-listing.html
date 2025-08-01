@@ -631,7 +631,91 @@
   <!-- script js -->
   <script src="assets/js/script.js"></script>
 
+
   <script>
+    // Function to open the location modal for ordering
+    let currentMealName = "";
+    function openLocationModal(mealName) {
+      currentMealName = mealName;
+      document.getElementById("location-status").innerHTML =
+        "To send your exact location with your order, please allow location access.";
+      document.getElementById("location-link").innerHTML = "";
+      document.getElementById("wa-order-btn").innerHTML = "";
+      var modal = new bootstrap.Modal(
+        document.getElementById("locationOrderModal")
+      );
+      modal.show();
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          function (position) {
+            const lat = position.coords.latitude;
+            const lng = position.coords.longitude;
+            const gmapsLink = `https://maps.google.com/?q=${lat},${lng}`;
+            document.getElementById("location-status").innerHTML =
+              '<span class="text-success">Location found!</span>';
+            document.getElementById(
+              "location-link"
+            ).innerHTML = `Google Maps: <a href="${gmapsLink}" target="_blank">${lat.toFixed(
+              5
+            )}, ${lng.toFixed(5)}</a>`;
+            // WhatsApp message
+            const waMsg = encodeURIComponent(
+              `I'd like to order this meal (${currentMealName}) and I came through the website. Angie's Kitchen. My location: ${gmapsLink}`
+            );
+            const waLink = `https://wa.me/+201026120743?text=${waMsg}`;
+            document.getElementById(
+              "wa-order-btn"
+            ).innerHTML = `<a href="${waLink}" target="_blank" class="btn btn-menu w-100 mt-3"><i class='ri-whatsapp-line icon'></i>Send on WhatsApp</a>`;
+          },
+          function (error) {
+            document.getElementById("location-status").innerHTML =
+              '<span class="text-danger">Could not get your location. Please check browser permissions and try again.</span>';
+          }
+        );
+      } else {
+        document.getElementById("location-status").innerHTML =
+          '<span class="text-danger">Geolocation is not supported by your browser.</span>';
+      }
+    }
+
+    // Live filtering for menu grid with animation
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterBtns = document.querySelectorAll('#category-filters .btn-filter');
+      const dishes = document.querySelectorAll('.col[data-categories]');
+
+      filterBtns.forEach(button => {
+        button.addEventListener('click', () => {
+          // Set active button
+          filterBtns.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+
+          const filter = button.dataset.filter;
+
+          dishes.forEach(dish => {
+            const categories = dish.dataset.categories;
+            const shouldShow = filter === 'all' || categories.includes(filter);
+
+            // Nice fade out/in animation
+            dish.style.transition = 'opacity 0.3s ease-out, transform 0.3s ease-out';
+            dish.style.opacity = '0';
+            dish.style.transform = 'scale(0.95)';
+
+            setTimeout(() => {
+              if (shouldShow) {
+                dish.style.display = 'block';
+                setTimeout(() => {
+                  dish.style.opacity = '1';
+                  dish.style.transform = 'scale(1)';
+                }, 20); 
+              } else {
+                dish.style.display = 'none';
+              }
+            }, 300);
+          });
+        });
+      });
+    });
+
     // Dynamically load navbar.html for DRY frontend includes
     fetch('navbar.html')
       .then(res => res.text())
@@ -653,14 +737,6 @@
           });
         });
       });
-
-    document.getElementById('reservationForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-      // You can replace this with AJAX or backend integration later
-      alert('Reservation submitted! We will contact you soon.');
-      var modal = bootstrap.Modal.getInstance(document.getElementById('reservationModal'));
-      modal.hide();
-    });
   </script>
 </body>
 
