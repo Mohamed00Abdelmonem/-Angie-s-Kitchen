@@ -6553,6 +6553,21 @@ header.header2 .navbar .nav-option .cart-bag {
   transform: translateX(-50%);
 }
 
+@media (max-width: 425px) {
+  .order-summery-section .checkout-detail .cart-address-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .order-summery-section .checkout-detail .cart-address-box .add-img .img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+  }
+  .order-summery-section .checkout-detail .cart-address-box .add-content {
+    width: 100%;
+  }
+}
 /*=====================
   5.5  checkout style start
 ==========================*/
@@ -9161,7 +9176,7 @@ body:not(.dark) .menu-section .order-summery-section .checkout-detail {
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .tab-details-section .related-products-section .related-product-box:last-child {
   margin-bottom: 0;
@@ -9182,6 +9197,52 @@ body:not(.dark) .menu-section .order-summery-section .checkout-detail {
   margin-top: 5px;
 }
 
+@media (max-width: 768px) {
+  .product-banner-section {
+    padding: 60px 0;
+  }
+  .product-banner-section .product-banner-content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .product-banner-section .product-banner-content .product-image .img {
+    width: 200px;
+    height: 200px;
+  }
+  .product-banner-section .product-banner-content .product-details {
+    text-align: center;
+  }
+  .product-banner-section .product-banner-content .product-details .product-name {
+    font-size: 28px;
+  }
+  .product-banner-section .product-banner-content .product-details .product-description {
+    font-size: 16px;
+  }
+  .product-banner-section .product-banner-content .product-details .product-price {
+    font-size: 24px;
+  }
+  .tab-details-section .related-products-section {
+    margin-top: 30px;
+  }
+  .tab-details-section .related-product-box {
+    gap: 15px;
+  }
+  .tab-details-section .related-product-box .related-product-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .product-banner-section .product-banner-content {
+    gap: 15px;
+    padding: 15px;
+  }
+  .tab-details-section .related-products-section .related-product-box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 /*========================
   5.12  product style start
 ==========================*/
