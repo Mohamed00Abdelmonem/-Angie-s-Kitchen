@@ -596,9 +596,8 @@
                   </span>
                 </li>
               </ul>
-
               <div class="mt-auto d-flex flex-column gap-2">
-                <a href="" class="btn btn-details"
+                <a href="dish-details.html" class="btn btn-details"
                   style="
                       display: inline-block;
                       background-color: #17a2b8;
@@ -673,7 +672,7 @@
               </ul>
 
               <div class="mt-auto d-flex flex-column gap-2">
-                <a href="" class="btn btn-details"
+                <a href="dish-details.html" class="btn btn-details"
                   style="
                       display: inline-block;
                       background-color: #17a2b8;
@@ -748,7 +747,7 @@
               </ul>
 
               <div class="mt-auto d-flex flex-column gap-2">
-                <a href="" class="btn btn-details"
+                <a href="dish-details.html" class="btn btn-details"
                   style="
                       display: inline-block;
                       background-color: #17a2b8;
@@ -1047,7 +1046,7 @@
             const waLink = `https://wa.me/+13122312021?text=${waMsg}`;
             document.getElementById(
               "wa-order-btn"
-            ).innerHTML = `<a href="${waLink}" target="_blank" class="btn btn-menu w-100 mt-3"><i class='ri-whatsapp-line icon'></i>Send on WhatsApp</a>`;
+            ).innerHTML = `<a href="${waLink}" target="_blank" class="btn btn-menu whatsapp-btn w-100 mt-3"><i class='ri-whatsapp-line icon'></i>Send on WhatsApp</a>`;
           },
           function (error) {
             document.getElementById("location-status").innerHTML =

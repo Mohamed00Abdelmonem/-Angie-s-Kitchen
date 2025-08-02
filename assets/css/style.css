@@ -242,6 +242,21 @@
 /*========================
   1.2 Variable Style start
 ==========================*/
+
+.whatsapp-btn {
+  background-color: #25d366 !important; /* WhatsApp green */
+  color: white !important;
+  border: none !important;
+  padding: 10px !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1da851 !important; /* Darker green on hover */
+}
+
 /* font family */
 /* color variables */
 :root {
